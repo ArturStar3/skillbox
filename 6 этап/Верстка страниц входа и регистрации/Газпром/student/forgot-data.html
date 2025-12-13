@@ -9,6 +9,89 @@
     <title>Проблема с входом - Газпромбанк Бизнес-Онлайн</title>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <svg width="203" height="50">
+            <use xlink:href="images/sprite.svg#logo"></use>
+          </svg>
+          <div class="header__benefit">
+            <div class="header__benefit-text">
+              <span class="header__benefit-rank"
+                >Топ-3 лучших банков для корпоративных клиентов</span
+              >
+              <span class="header__benefit-rank header__benefit--source"
+                >По версии Markswebb</span
+              >
+            </div>
+            <svg width="56" height="56">
+              <use xlink:href="images/sprite.svg#rank"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="forgot-data login">
+          <div class="frame">
+            <div class="forgot-data__inner">
+              <h1 class="forgot-data__heading">Не можете войти?</h1>
+              <div class="forgot-data__settings">
+                <div class="custom-radio">
+                  <input  class="custom-radio__field visually-hidden" type="radio" name="password-recover" id="set-new-password">
+                  <label for="set-new-password" class="custom-radio__label">Установить новый пароль</label>
+                </div>
+                <div class="custom-radio">
+                  <input  class="custom-radio__field visually-hidden" type="radio" name="password-recover" id="restore-login">
+                  <label for="restore-login" class="custom-radio__label">Восстановить логин</label>
+                </div>
+              </div>
+              <button class="btn forgot-data__btn" type="submit" disabled>Продолжить</button>
+                          <a href="login.html" class="forgot-data__back-link">
+              <svg width="20" height="20">
+                <use xlink:href="images/sprite.svg#back-arrow"></use>
+              </svg>
+            </a>
+            </div>
 
+          </div>
+
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__inner-content">
+            <a href="tel:+78001001189" class="footer__link">
+              <svg width="16" height="16">
+                <use xlink:href="images/sprite.svg#phone"></use>
+              </svg>
+              <span class="footer__link-data">8 800 100 11 89</span>
+            </a>
+            <a href="#" class="footer__link">
+              <svg width="16" height="16">
+                <use xlink:href="images/sprite.svg#telegram"></use>
+              </svg>
+              <span class="footer__link-data">Написать в Telegram</span>
+            </a>
+            <span class="footer__copyright"
+              >&copy; 2024 Банк ГПБ (АО) Генеральная лицензия Банка России
+              №354</span
+            >
+            <a href="" class="footer__link footer--policy"
+              >Политика обработки персональных данных</a
+            >
+          </div>
+          <button class="footer__btn" type="button">
+            <span class="footer__btn-heading">Светлая тема</span>
+            <svg class="footer__btn-icon" width="16" height="16">
+              <use xlink:href="images/sprite.svg#theme"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

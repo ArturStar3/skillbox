@@ -1,0 +1,39 @@
+.forgot-data__inner {
+    padding: 32px;
+    position: relative;
+}
+
+.forgot-data__heading {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1E222E;
+    margin-bottom: 32px;
+}
+
+.forgot-data__settings {
+    border: 1px solid #CDCFDE80;
+    padding: 28px 32px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.forgot-data__back-link {
+    position: absolute;
+    top: 22px;
+    left: 0;
+    transform: translateX(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 20px 0px #101A3B1A;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

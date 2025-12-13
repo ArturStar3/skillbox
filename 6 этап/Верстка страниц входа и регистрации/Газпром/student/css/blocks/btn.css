@@ -3,9 +3,14 @@
     background-color: #476BF0;
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 14px;
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+}
+
+.btn:disabled {
+    background-color: #DBDFEB;
+    color: #777C9B;
 }

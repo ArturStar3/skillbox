@@ -6,14 +6,6 @@
     gap: 32px;
 }
 
-.login__frame {
-    border-radius: 20px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 2px 24px 0px #7F225505;
-    min-width: 450px;
-    overflow: hidden;
-}
-
 .login__top-wraper {
     padding: 32px;
     display: flex;
@@ -46,6 +38,7 @@
 .login__bottom-wraper {
     background: linear-gradient(90deg, #F5F6FA 0%, #F7F1F7 51.5%, #F5F7FD 100%);
     padding: 24px;
+    border-radius: 0 0 20px 20px;
 
 }
 
