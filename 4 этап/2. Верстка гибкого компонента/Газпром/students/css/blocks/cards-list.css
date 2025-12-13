@@ -1,0 +1,9 @@
+.cards-list {
+    display: flex;
+    gap: 40px 32px;
+    flex-wrap: wrap;
+}
+
+.cards-list__item {
+    width: calc(100% / 4 - 32px * 3 / 4)
+}

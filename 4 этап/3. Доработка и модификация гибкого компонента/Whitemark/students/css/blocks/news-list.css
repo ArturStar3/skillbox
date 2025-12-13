@@ -1,0 +1,17 @@
+.news-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.news-list__item {
+    width: calc(100% / 2 - 15px);
+}
+
+.news-list--flat {
+    flex-direction: column;
+}
+
+.news-list--flat .news-list__item {
+    width: 100%;
+}

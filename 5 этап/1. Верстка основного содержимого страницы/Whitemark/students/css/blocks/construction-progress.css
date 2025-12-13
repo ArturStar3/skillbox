@@ -1,0 +1,9 @@
+.construction-progress {
+    display: grid;
+    grid-template-columns: 760px 1fr;
+    gap: 40px;
+}
+
+.construction-progress__info {
+    border-left: 1px solid #053947;
+}

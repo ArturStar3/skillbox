@@ -1,0 +1,9 @@
+ .persons-list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.persons-list__item {
+        width: calc(100% / 2 - 15px);
+}

@@ -1,0 +1,13 @@
+.to-begin {
+    position: fixed;
+    right: 138px;
+    bottom: 420px;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #F6F6F6;
+    padding: 0;
+    cursor: pointer;
+
+}

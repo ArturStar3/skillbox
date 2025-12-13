@@ -1,0 +1,74 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 640px;
+    min-height: calc(100vh - 80px);
+}
+
+.hero__content {
+    padding: 120px 20px 20px 60px;
+}
+
+.hero__note {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__deals {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 32px;
+    margin-bottom: 60px;
+}
+
+.hero__downpayment-text {
+    width: 110px;
+    background-color: #FFFFFF;
+    color: #3C52E6;
+    padding: 16px 15px 14px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.hero__procent {
+    font-size: 44px;
+    line-height: 40px;
+    letter-spacing: -0.1em;
+}
+
+.hero__downpayment-text--first-row {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.hero__deals-list {
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.hero__deal-item {
+    margin-bottom: 4px;
+}
+
+.hero__offer-link {
+    background-color: #23252E;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 14px 28px;
+}

@@ -1,0 +1,26 @@
+.info__card-list {
+    display: grid;
+    grid-template-columns: repeat(2, 340px);
+    grid-template-rows: repeat(4, auto);
+    gap: 32px 40px;
+}
+
+.info__card-item--flat {
+    grid-column: span 2;
+}
+
+.info__card-item--flat .news-card {
+    flex-direction: row;
+    gap: 32px;
+    background-color: #F4F6FA;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.info__card-item--flat .news-card__description {
+    padding: 20px 32px 20px 0;
+}
+
+.info__card-item--flat .news-card__img {
+    border-radius: 0;
+}

@@ -1,0 +1,100 @@
+
+.person-card {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(242, 243, 238, 1);
+    border-radius: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.person-card__position {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(29, 37, 45, 1);
+    margin-bottom: 5px;
+}
+
+.person-card__name {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1D252D;
+    margin-bottom: 20px;
+}
+
+.person-card__info {
+    display: flex;
+    gap: 30px;
+    height: calc(100% - 73px);
+}
+
+.person-card__photo {
+    width: 220px;
+    height: 330px;
+    border-radius: 12px;
+}
+
+.person-card__semantics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(100% - 220px - 30px);
+}
+
+.person-card__description {
+    margin-bottom: 20px;
+}
+
+.person-card__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(29, 37, 45, 1);
+    margin-bottom: 20px;
+    color: #1D252D;
+}
+
+.person-card--center .person-card__text {
+    text-align: center;
+}
+
+.person-card__note {
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: right;
+    color: #1D252D;
+}
+
+.person-card--center .person-card__note {
+    text-align: center;
+}
+
+.person-card__links {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.person-card__link {
+    text-align: center;
+    padding: 7px 0;
+    background-color: #D6D2C4;
+    border-radius: 40px;
+    color: #1D252D;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 18px;
+    width: calc(100% / 2 - 5px);
+}
+
+.person-card__link--secondary {
+    background-color: inherit;
+    border-radius: 0;
+}

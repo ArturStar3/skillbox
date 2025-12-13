@@ -1,0 +1,47 @@
+.request-form__group {
+    border: none;
+    padding: 60px 0 0;
+    margin-bottom: 40px;
+}
+
+.request-form__group-name {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.request-form__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px 80px;
+}
+
+.request-form__inner-rows {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.request-form--radio {
+    padding: 28px 0 0;
+}
+
+.request-form__inner--radio {
+    gap: 28px;
+}
+
+.request-form__btn {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 125%;
+    color: rgba(25, 25, 239, 0.4);
+    border: 1px solid rgba(25, 25, 239, 0.4);
+    border-radius: 60px;
+    margin: 0 auto;
+    padding: 11px 36px;
+    background-color: transparent;
+}

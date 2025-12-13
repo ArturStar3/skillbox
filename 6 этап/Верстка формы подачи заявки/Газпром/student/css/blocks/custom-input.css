@@ -1,0 +1,53 @@
+.custom-input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.custom-input__field {
+  outline: none;
+  border: none;
+  font-family: inherit;
+  padding: 0 32px 12px 0;
+  font-size: 18px;
+  line-height: 1.2;
+  border-bottom: 1px solid #CACACA;
+}
+
+.custom-input__field::placeholder {
+  color: #9B9B9B;
+}
+
+.custom-input__label {
+  position: absolute;
+  left: 0;
+  bottom: 38px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 120%;
+  color: #1919EF;
+}
+
+.custom-input__label--grey {
+  bottom: 80px;
+  font-size: 18px;
+  color: #9B9B9B;
+}
+
+.custom-input__icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-input--wide {
+  grid-column: span 2;
+}
+
+.custom-input--tall {
+  min-height: 102px;
+}
+
+

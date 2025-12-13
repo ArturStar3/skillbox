@@ -1,0 +1,38 @@
+.advantages {
+    margin-bottom: 80px;
+}
+
+.advantages__heading {
+    font-family: "Ardeco", "Arial", sans-serif;
+    font-weight: 400;
+    color: #204186;
+    padding: 0;
+    margin: 0 0 80px;
+}
+
+.advantages__heading-main {
+    display: block;
+    font-size: 160px;
+    line-height: 140px;
+    letter-spacing: -0.02em;
+    margin-bottom: 16px;
+}
+
+.advantages__heading-sub {
+    font-size: 52px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.advantages .apartments__list {
+    list-style: none;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.advantages .apartments__list-item {
+    margin-bottom: 36px;
+}

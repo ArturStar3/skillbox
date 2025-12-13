@@ -1,0 +1,91 @@
+.footer {
+    background-color: #23252E;
+    padding: 40px 0 28px;
+    font-family: "Foros", 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: 1fr 140px 1fr;
+    margin-bottom: 16px;
+}
+
+.footer__location {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer__place {
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.footer_addressee {
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.footer__navigate {
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: underline;
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer__phone {
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.footer__email {
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 72px;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.footer__nav-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 56px;
+    font-family: "Open Sans", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 48px;
+}
+
+.footer__copyright {
+    padding: 0 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__copyright-text {
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.4);
+}

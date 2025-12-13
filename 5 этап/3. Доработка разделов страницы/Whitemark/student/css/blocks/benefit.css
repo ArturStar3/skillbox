@@ -1,0 +1,44 @@
+.benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 480px;
+  border-radius: 180px;
+  border: 2px solid #FFFFFF;
+  padding: 20px;
+}
+
+.benefit--apartment {
+  background-image: url("../../images/image-apartment.jpg");
+}
+
+.benefit--silence {
+  background-image: url("../../images/silence_privacy.png");
+}
+
+.benefit--advantages {
+  background-image: url("../../images/advantages.png");
+}
+
+.benefit--round-top {
+  border-radius: 180px  180px 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.benefit__number {
+  font-family: "Ardeco", "Arial", sans-serif;
+  margin: 0 0 16px;
+  font-size: 80px;
+  line-height: 60px;
+}
+
+.benefit__text {
+  margin: 0 0 24px;
+  font-size: 22px;
+  line-height: 24px;
+  text-transform: uppercase;
+}

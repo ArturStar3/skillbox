@@ -1,0 +1,72 @@
+.progress-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 1px solid #053947;
+    padding: 40px 0 40px 100px;
+}
+
+.progress-info__description-wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.progress-info__link-back {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    justify-content: center;
+}
+
+.progress-info__title {
+    font-family: "Fira Sans Extra Condensed", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+}
+
+.progress-info__list {
+    list-style: disc;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.progress-info__item {
+    margin-bottom: 16px;
+}
+
+.progress-info__item--last {
+    margin: 0;
+}
+
+.progress-info__link-list {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.progress-info__link-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #B68E6C;
+}
+
+.progress-info__link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.progress-info__link-text {
+    display: block;
+    width: 100px;
+    height: auto;
+}

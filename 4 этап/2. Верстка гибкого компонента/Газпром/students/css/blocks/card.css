@@ -1,0 +1,82 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 32px;
+    border-radius: 8px;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card--pensioner {
+    background-image: url(../../images/bg_images/Льготы\ для\ пенсионеров.png);
+}
+
+.card--rank {
+    background-image: url(../../images/bg_images/Высокий\ рейтинг.png);
+}
+
+.card--gold {
+    background-image: url(../../images/bg_images/Золотые\ слитки.png);
+}
+
+.card--taxes {
+    background-image: url(../../images/bg_images/Вычет\ при\ покупке\ квартиры.png);
+}
+
+.card--money-transfer {
+     background-image: url(../../images/bg_images/Перевод\ дененг.png);
+}
+
+.card--dismissal {
+    background-image: url(../../images/bg_images/Право\ на\ увольнение.png);
+}
+
+.card--hide-balance {
+    background-image: url(../../images/bg_images/Скрыть\ баланс.png);
+}
+
+.card--credit {
+    background-image: url(../../images/bg_images/Кредитная\ нагрузка.png);
+}
+
+.card__heading-wraper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.card__logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.card__note {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+.card__link {
+    display: block;
+    background-color: rgba(71, 107, 240, 1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 14px 84px 14px 83px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(255, 255, 255, 1);
+}

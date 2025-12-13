@@ -1,0 +1,73 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 204px 1fr;
+    align-items: center;
+    padding: 16px 50px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.header__description {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 142px;
+}
+
+.header__link {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header__contact-info {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    text-align: right;
+    gap: 40px;
+}
+
+.header__options {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.header__appartments {
+    border: 2px solid #FFFFFF;
+    border-radius: 60px;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 12px 20px;
+}
+
+.header__btn {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+
+.header--phone {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,18 @@
+.progress-gallery {
+    padding: 40px 0 0;
+}
+
+.progress-gallery__list {
+    display: grid;
+    grid-template-columns: 160px 190px repeat(2, 160px);
+    grid-template-rows: 220px 200px 160px;
+    gap: 30px;
+}
+
+.progress-gallery__item--wide {
+    grid-column: span 2;
+}
+
+.progress-gallery__item--high {
+    grid-row: span 2;
+}
