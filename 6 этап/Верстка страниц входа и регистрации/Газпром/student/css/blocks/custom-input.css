@@ -33,3 +33,7 @@
     padding-right: 30px;
     width: 100%;
 }
+
+.custom-input--wide {
+    grid-column: span 2;
+}

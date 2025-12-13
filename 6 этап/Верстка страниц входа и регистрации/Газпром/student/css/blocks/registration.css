@@ -1,0 +1,18 @@
+.registration__inner {
+    display: grid;
+    grid-template-columns: 450px 500px;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+}
+
+.registration__lift-inner {
+    padding: 32px;
+}
+
+.registration__form {
+    display: grid;
+    grid-template-columns: repeat(2, 188px);
+    gap: 12px 10px;
+}
