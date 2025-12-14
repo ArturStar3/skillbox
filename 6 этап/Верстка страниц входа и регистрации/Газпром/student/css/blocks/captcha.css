@@ -1,0 +1,12 @@
+.captcha {
+    grid-column: span 2;
+    display: flex;
+    gap: 10px;
+}
+
+.captcha__wraper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 188px;
+}
