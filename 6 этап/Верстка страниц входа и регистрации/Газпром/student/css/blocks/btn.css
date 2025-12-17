@@ -8,6 +8,16 @@
     font-size: 16px;
     line-height: 20px;
     color: #FFFFFF;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3356D7;
+}
+
+.btn:focus-visible {
+    background-color: #2143C1;
+    outline: none;
 }
 
 .btn:disabled {

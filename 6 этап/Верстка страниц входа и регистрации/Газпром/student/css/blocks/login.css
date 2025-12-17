@@ -27,6 +27,10 @@
     color: #1E222E;
 }
 
+.login__forgot:hover {
+    color: #3356D7;
+}
+
 .login__bottom-wraper {
     background: linear-gradient(90deg, #F5F6FA 0%, #F7F1F7 51.5%, #F5F7FD 100%);
     padding: 24px;

@@ -3,6 +3,9 @@
     display: flex;
     gap: 10px;
     margin: 8px 0 12px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .captcha__wraper {
@@ -21,10 +24,20 @@
     padding: 14px 16px;
 }
 
+.captcha__field:hover {
+    border: 1px solid #3356D7;
+}
+
+.captcha__field:focus-visible {
+    border: 1px solid #3356D7;
+    outline: none;
+}
+
 .captcha__label {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    align-self: flex-start;
 }
 
 .captcha__btn {
@@ -32,6 +45,10 @@
     width: 12px;
     align-self: flex-end;
     cursor: pointer;
+}
+
+.captcha__btn:focus-visible {
+    outline: none;
 }
 
 .captcha__img-wraper {

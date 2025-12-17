@@ -36,4 +36,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    color: #1E222E;
+}
+
+.forgot-data__back-link:hover {
+    color: #476BF0;
+}
+
+.forgot-data__back-link:focus-visible {
+    color: #476BF0;
+    outline: none;
+}
+
+.forgot-data__back-link:disabled {
+    background-color: #DBDFEB;
+    color: #777C9B;
 }

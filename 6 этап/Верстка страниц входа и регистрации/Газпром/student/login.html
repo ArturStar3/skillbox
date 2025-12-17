@@ -43,6 +43,7 @@
                     id="login-field"
                     class="custom-input__field"
                     type="text"
+                    required
                   />
                   <label for="login-field" class="custom-input__label"
                     >Логин</label
@@ -50,12 +51,16 @@
                   <svg class="custom-input__icon" width="24" height="24">
                     <use xlink:href="images/sprite.svg#login"></use>
                   </svg>
+                  <span class="custom-input__error-message">
+                    Неверный логин
+                  </span>
                 </div>
                 <div class="custom-input">
                   <input
                     id="password-field"
                     class="custom-input__field"
                     type="password"
+                    required
                   />
                   <label class="custom-input__label" for="password-field"
                     >Пароль</label
@@ -63,6 +68,9 @@
                   <svg class="custom-input__icon" width="24" height="24">
                     <use xlink:href="images/sprite.svg#eye-closed"></use>
                   </svg>
+                  <span class="custom-input__error-message">
+                        Неверный пароль
+                  </span>
                 </div>
                 <button class="btn login-form__btn" type="submit">Войти</button>
               </form>

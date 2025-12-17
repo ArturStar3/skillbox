@@ -23,6 +23,10 @@
     color: #ADAFBA;
 }
 
+.footer__link:hover {
+    color: #3356D7;
+}
+
 .footer__copyright {
     font-weight: 400;
     font-size: 12px;

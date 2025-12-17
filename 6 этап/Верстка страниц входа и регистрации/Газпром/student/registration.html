@@ -46,10 +46,14 @@
                         id="surname"
                         class="custom-input__field"
                         name="surname"
+                        required
                       />
                       <label class="custom-input__label" for="surname"
                         >Фамилия</label
                       >
+                      <span class="custom-input__error-message">
+                        Поле обязательно для заполнения
+                      </span>
                     </div>
                     <div class="custom-input">
                       <input
@@ -57,8 +61,12 @@
                         id="name"
                         name="name"
                         class="custom-input__field"
+                        required
                       />
                       <label class="custom-input__label" for="name">Имя</label>
+                      <span class="custom-input__error-message">
+                        Поле обязательно для заполнения
+                      </span>
                     </div>
                     <div class="custom-input">
                       <input
@@ -66,10 +74,14 @@
                         id="last-name"
                         name="last-name"
                         class="custom-input__field"
+                        required
                       />
                       <label class="custom-input__label" for="last-name"
                         >Отчество</label
                       >
+                      <span class="custom-input__error-message">
+                        Поле обязательно для заполнения
+                      </span>
                     </div>
                     <div class="custom-input custom-input--wide">
                       <input
@@ -77,10 +89,14 @@
                         id="login"
                         class="custom-input__field"
                         name="login"
+                        required
                       />
                       <label class="custom-input__label" for="login"
                         >Логин</label
                       >
+                      <span class="custom-input__error-message">
+                        Поле обязательно для заполнения
+                      </span>
                     </div>
                     <div class="custom-input custom-input--wide">
                       <input
@@ -88,10 +104,14 @@
                         id="password"
                         class="custom-input__field"
                         name="password"
+                        required
                       />
                       <label class="custom-input__label" for="password"
                         >Пароль</label
                       >
+                      <span class="custom-input__error-message">
+                        Неверный пароль
+                      </span>
                     </div>
                     <div class="custom-input custom-input--wide">
                       <input
@@ -111,10 +131,14 @@
                         id="email"
                         class="custom-input__field"
                         name="email"
+                        required
                       />
                       <label class="custom-input__label" for="email"
                         >Email</label
                       >
+                      <span class="custom-input__error-message">
+                        Поле обязательно для заполнения
+                      </span>
                     </div>
                     <div class="captcha">
                       <div class="captcha__wraper">
@@ -148,11 +172,14 @@
                     </div>
                     <button class="btn btn--wide" type="submit">Продолжить</button>
                     <div class="custom-checkbox custom-checkbox--wide">
-                      <input  class="custom-checkbox__field visually-hidden" type="checkbox" id="agree" name="agree">
+                      <input  class="custom-checkbox__field visually-hidden" type="checkbox" id="agree" name="agree" checked>
                       <label class="custom-checkbox__label" for="agree">
                         <span class="custom-checkbox__heading">
                           Согласен на обработку и передачу <a href="" class="custom-checkbox__link">персональных данных</a>
                         </span>
+                        <svg class="custom-checkbox__icon" width="12" height="9">
+                          <use xlink:href="images/sprite.svg#checked"></use>
+                        </svg>
                       </label>
                     </div>
                   </form>
