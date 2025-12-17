@@ -7,13 +7,21 @@
     padding: 32px;
 }
 
-.registration__lift-inner {
-    padding: 32px;
+.registration__left-inner {
+    text-align: center;
 }
 
 .registration__form {
     display: grid;
     grid-template-columns: repeat(2, 188px);
     gap: 12px 10px;
+}
+
+.registration__heading {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #1E222E;
+    margin-bottom: 20px;
 }
 

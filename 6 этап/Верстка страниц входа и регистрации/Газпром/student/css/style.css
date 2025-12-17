@@ -13,9 +13,11 @@
 @import "blocks/login.css";
 @import "blocks/custom-input.css";
 @import "blocks/custom-radio.css";
+@import "blocks/custom-checkbox.css";
 @import "blocks/btn.css";
 @import "blocks/registrate-link.css";
 @import "blocks/frame.css";
 @import "blocks/forgot-data.css";
 @import "blocks/registration.css";
 @import "blocks/captcha.css";
+@import "blocks/features.css";

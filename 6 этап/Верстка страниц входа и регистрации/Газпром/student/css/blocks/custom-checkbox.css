@@ -1,0 +1,33 @@
+.custom-checkbox {
+    position: relative;
+    display: flex;
+}
+
+.custom-checkbox--wide {
+    grid-column: span 2;
+}
+
+.custom-checkbox__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1E222E;
+    padding-left: 32px;
+    cursor: pointer;
+}
+
+.custom-checkbox__label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #CDCFDE;
+    border-radius: 4px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-checkbox__link {
+    color: #476BF0;
+}

@@ -2,6 +2,7 @@
     grid-column: span 2;
     display: flex;
     gap: 10px;
+    margin: 8px 0 12px;
 }
 
 .captcha__wraper {
@@ -9,4 +10,35 @@
     flex-direction: column;
     gap: 8px;
     width: 188px;
+}
+
+.captcha__field {
+    border: 1px solid #CDCFDE;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 14px 16px;
+}
+
+.captcha__label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.captcha__btn {
+    background: none;
+    width: 12px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.captcha__img-wraper {
+    border: 1px solid #CDCFDE;
+    border-radius: 8px;
+}
+
+.captcha__img {
+    margin: 0 auto;
 }

@@ -14,3 +14,7 @@
     background-color: #DBDFEB;
     color: #777C9B;
 }
+
+.btn--wide {
+    grid-column: span 2;
+}

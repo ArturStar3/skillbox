@@ -35,7 +35,7 @@
       <div class="container">
         <section class="registration">
           <div class="registration__inner">
-            <div class="regsitration__left-side">
+            <div class="regsitration__left-side frame__wraper">
               <div class="frame">
                 <div class="registration__left-inner">
                   <h1 class="registration__heading">Регистрация</h1>
@@ -135,20 +135,41 @@
                             ></use>
                           </svg>
                         </button>
-                        <img
-                          src="images/captcha.png"
-                          alt="Captcha"
-                          class="captcha__img"
-                          width="124"
-                          height="44"
-                        />
+                        <div class="captcha__img-wraper">
+                          <img
+                            src="images/captcha.png"
+                            alt="Captcha"
+                            class="captcha__img"
+                            width="124"
+                            height="44"
+                          />
+                        </div>
                       </div>
+                    </div>
+                    <button class="btn btn--wide" type="submit">Продолжить</button>
+                    <div class="custom-checkbox custom-checkbox--wide">
+                      <input  class="custom-checkbox__field visually-hidden" type="checkbox" id="agree" name="agree">
+                      <label class="custom-checkbox__label" for="agree">
+                        <span class="custom-checkbox__heading">
+                          Согласен на обработку и передачу <a href="" class="custom-checkbox__link">персональных данных</a>
+                        </span>
+                      </label>
                     </div>
                   </form>
                 </div>
               </div>
+              <a href="#" class="registrate-link">Войти в ГПБ Бизнес-онлайн</a>
             </div>
-            <div class="registration__right-side"></div>
+            <div class="registration__right-side">
+              <div class="features">
+                <h2 class="features__heading">ГПБ Бизнес ID — один для всех</h2>
+                <ol class="features__list">
+                  <li class="features__item">Единая учетная запись для работы с продуктами и сервисами, предоставляемыми группой Банк ГПБ (АО) и партнёрами</li>
+                  <li class="features__item">Возможность одновременной работы с несколькими продуктами без необходимости переходить из одной системы в другую</li>
+                  <li class="features__item">Гарантия защиты Ваших персональных данных</li>
+                </ol>
+              </div>
+            </div>
           </div>
         </section>
       </div>
