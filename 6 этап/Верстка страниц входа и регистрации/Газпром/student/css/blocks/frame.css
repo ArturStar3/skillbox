@@ -1,11 +1,11 @@
-.frame {
+.frame__wraper {
     border-radius: 20px;
     background-color: #FFFFFF;
     box-shadow: 0px 2px 24px 0px #7F225505;
     width: 450px;
 }
 
-.frame__wraper {
+.frame {
     display: flex;
     justify-content: center;
     align-items: center;

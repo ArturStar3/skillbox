@@ -35,14 +35,10 @@
     background: linear-gradient(90deg, #F5F6FA 0%, #F7F1F7 51.5%, #F5F7FD 100%);
     padding: 24px;
     border-radius: 0 0 20px 20px;
-
-}
-
-.login__bottom-inner {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 8px;    
+    gap: 8px; 
 }
 
 .login__entry-link {

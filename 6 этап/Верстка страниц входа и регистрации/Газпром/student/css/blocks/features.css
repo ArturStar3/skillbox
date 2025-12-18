@@ -28,7 +28,7 @@
 }
 
 .features__item::before {
-    content: "";
+    content: counter(counter);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -36,20 +36,12 @@
     position: absolute;
     left: 0;
     top: 0;
-}
-
-.features__item::after {
-    content: counter(counter);
-    position: absolute;
     display: flex;
-    width: 40px;
-    height: 40px;
     align-items: center;
     justify-content: center;
-    left: 0;
-    top: 0;
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #4F6AE8;
 }
+

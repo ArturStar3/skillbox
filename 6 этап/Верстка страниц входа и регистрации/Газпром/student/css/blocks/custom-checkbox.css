@@ -42,7 +42,7 @@
     color: #476BF0;
 }
 
-.custom-checkbox__error .custom-checkbox__label::before {
+.custom-checkbox--error .custom-checkbox__label::before {
     border: 1px solid #F6514B
 }
 

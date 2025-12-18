@@ -20,7 +20,7 @@
               <span class="header__benefit-rank"
                 >Топ-3 лучших банков для корпоративных клиентов</span
               >
-              <span class="header__benefit-rank header__benefit--source"
+              <span class="header__benefit-rank header__benefit-rank--source"
                 >По версии Markswebb</span
               >
             </div>
@@ -32,9 +32,9 @@
       </div>
     </header>
     <main>
-      <div class="container">
-        <section class="login frame__wraper">
-          <div class="frame">
+      <section class="login frame">
+        <div class="container"></div>
+          <div class="frame__wraper">
             <div class="login__top-wraper">
               <h1 class="login__header">Вход в ГПБ Бизнес-онлайн</h1>
               <form class="login__form" action="#" method="POST">
@@ -72,31 +72,28 @@
                         Неверный пароль
                   </span>
                 </div>
-                <button class="btn login-form__btn" type="submit">Войти</button>
+                <button class="btn login__form-btn" type="submit">Войти</button>
               </form>
               <a href="#" class="login__forgot">Забыли логин или пароль?</a>
             </div>
             <div class="login__bottom-wraper">
-              <div class="login__bottom-inner">
+              
                 <span class="login__entry-text">Войти с помощью:</span>
-                <ul class="login__entry-list">
-                  <li class="login__entry-item">
-                    <a href="#" class="login__entry-link">
-                      <svg width="32" height="32">
-                        <use xlink:href="images/sprite.svg#gpb"></use>
-                      </svg>
-                      <span class="login__entry-text"> ЭТП ГПБ </span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                <a href="#" class="login__entry-link">
+                  <svg width="32" height="32">
+                    <use xlink:href="images/sprite.svg#gpb"></use>
+                  </svg>
+                  <span class="login__entry-text"> ЭТП ГПБ </span>
+                </a>
+
+              
             </div>
           </div>
-          <a href="registration.html" class="registrate-link"
-            >Зарегистрироваться</a
-          >
-        </section>
-      </div>
+        <a href="registration.html" class="registrate-link"
+          >Зарегистрироваться</a
+        >
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
@@ -118,7 +115,7 @@
               >&copy; 2024 Банк ГПБ (АО) Генеральная лицензия Банка России
               №354</span
             >
-            <a href="" class="footer__link footer--policy"
+            <a href="" class="footer__link footer__link--policy"
               >Политика обработки персональных данных</a
             >
           </div>

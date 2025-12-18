@@ -50,6 +50,6 @@
     border-radius: 50%;
 }
 
-.custom-radio__error .custom-radio__label::before {
+.custom-radio--error .custom-radio__label::before {
     border: 1px solid #F6514B;
 }

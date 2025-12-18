@@ -76,11 +76,11 @@
     display: none;
 }
 
-.custom-input__error .custom-input__field {
+.custom-input--error .custom-input__field {
     border: 1px solid #F9C4C2;
     background-color: #FFFBFB;
 }
 
-.custom-input__error .custom-input__error-message {
+.custom-input--error .custom-input__error-message {
     display: block;
 }
