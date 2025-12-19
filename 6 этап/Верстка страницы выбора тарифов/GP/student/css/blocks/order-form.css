@@ -16,3 +16,9 @@
     line-height: 115%;
     color: #858385;
 }
+
+.order-form__submit-wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}

@@ -79,6 +79,10 @@
     display: block;
 }
 
+.features__details-link:hover {
+    color: #9D1881;
+}
+
 .features__price-list {
     display: flex;
     flex-direction: column;

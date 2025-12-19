@@ -142,7 +142,7 @@
                       </div>
                     </li>
                   </ul>
-                  <button class="btn" type="button">Заказать SIM-карту</button>
+                  <button class="btn btn--try" type="button">Заказать SIM-карту</button>
                 </div>
               </li>
               <!-- Действуй -->
@@ -447,9 +447,10 @@
                   <input class="custom-input__field" type="text" name="FIO" id="fio" placeholder="Иванов Иван Иванович" required>
                   <label class="custom-input__label" for="fio">ФИО*</label>
                 </div>
-                <div class="custom-input">
+                <div class="custom-input custom-input--error">
                   <input class="custom-input__field" type="tel" name="phone" id="phone" placeholder="+7 (9__) ___-__-__" required>
                   <label class="custom-input__label" for="fio">Контактный номер*</label>
+                  <span class="custom-input__error-message">Некорректное значение</span>
                 </div>
                 <div class="custom-input">
                   <input class="custom-input__field" type="email" name="email" id="email" placeholder="ivan@email.ru">
@@ -460,10 +461,41 @@
                 <input class="custom-checkbox__field visually-hidden" type="checkbox" name="num-transfer" id="num-transfer">
                 <label class="custom-checkbox__label" for="num-transfer">
                   <span class="custom-checkbox__text">Перенести номер и получать +5 ГБ ежемесячно</span>
+                  <span class="custom-checkbox__icon-wraper">
+                    <svg class="custom-checkbox__icon" width="12" height="9">
+                        <use xlink:href="images/sprite.svg#checked"></use>
+                    </svg>
+                  </span>
                 </label>
+                <a href="" class="custom-checkbox__info-link">
+                    <svg class="custom-checkbox__info-icon" width="20" height="20">
+                      <use xlink:href="images/sprite.svg#info"></use>
+                    </svg>
+                  </a>
               </div>
+              <div class="order-form__submit-wraper">
+                <div class="custom-checkbox custom-checkbox--agree">
+                  <input class="custom-checkbox__field visually-hidden" type="checkbox" name="num-transfer" id="num-transfer" checked>
+                  <label class="custom-checkbox__label" for="num-transfer">
+                    <span class="custom-checkbox__text">Согласен с <a href="#" class="order__link">Правилами заказа и доставки SIM-карт</a>, на обработку в соответствии с ними моих персональных данных и получение рекламы.</span>
+                    <span class="custom-checkbox__icon-wraper">
+                    <svg class="custom-checkbox__icon" width="12" height="9">
+                        <use xlink:href="images/sprite.svg#checked"></use>
+                    </svg>
+                  </span>
+                  </label>
+                  <a href="" class="custom-checkbox__info-link">
+                      <svg class="custom-checkbox__info-icon" width="20" height="20">
+                        <use xlink:href="images/sprite.svg#info"></use>
+                      </svg>
+                    </a>
+                </div>
+                <button class="btn btn--small" type="submit" disabled>Продолжить</button>
+              </div>
+              
             </form>
             </div>
+            <span class="order__captcha-text">Этот сайт защищен reCAPTCHA, и к нему применяются <a href="" class="order__link">Политика конфиденциальности Google</a>и <a href="" class="order__link">Условия предоставления услуг</a></span>
             
           </div>
           

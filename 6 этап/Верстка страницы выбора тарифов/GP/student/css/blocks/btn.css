@@ -5,16 +5,67 @@
     letter-spacing: -0.02em;
     color: #FFFFFF;
     padding: 18px 58px;
-    background: linear-gradient(270deg, #537CCB 0%, #13AED7 100%);
     border: none;
     border-radius: 16px;
     cursor: pointer;
+}
+
+.btn--try {
+    background: linear-gradient(270deg, #537CCB 0%, #13AED7 100%);
+}
+
+.btn--try:hover {
+    background: #537CCB;
+}
+
+.btn--try:focus-visible {
+    background: #537CCB;
 }
 
 .btn--action {
     background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
 }
 
+.btn--action:hover {
+    background: #9548BD;
+}
+
+.btn--action:focus-visible {
+    background: #9548BD;
+}
+
 .btn--win {
     background: linear-gradient(270deg, #D812AE 0%, #9548BD 100%);
+}
+
+.btn--win:hover {
+    background: #D812AE;
+}
+
+.btn--win:focus-visible {
+    background: #D812AE;
+}
+
+.btn--small {
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 115%;
+    letter-spacing: 0;
+    background: none;
+    background-color: #239DD6;
+    border-radius: 60px;
+}
+
+.btn--small:disabled {
+    background-color: #F0F0F0;
+    color: #858385;
+}
+
+.btn--small:hover {
+    background: #9D1881;
+}
+
+.btn--small:focus-visible {
+    background: #771061;
 }
