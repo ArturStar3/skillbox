@@ -1,0 +1,28 @@
+.custom-input {
+    position: relative;
+    height: 68px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.custom-input__field {
+    border: 1px solid #F0F0F0;
+    background-color: #FCFCFC;
+    padding: 12px 20px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.custom-input__field::placeholder {
+    color: #BFBFBF;
+}
+
+.custom-input__label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 115%;
+    color: #858385;
+}

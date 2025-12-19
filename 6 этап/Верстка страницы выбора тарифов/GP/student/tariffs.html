@@ -409,40 +409,59 @@
               </ul>
             
             <form class="order-form" action="#" method="POST">
-              <fieldset class="order-form__sim-type">
-                <legend class="order-form__sim-type-legend">
-                  Выберите тип SIM-карты
-                </legend>
-                <ul class="order-form__sim-types-list">
-                  <li class="order-form__sim-types-item">
-                    <div class="custom-radio--small">
-                      <input class="custom-radio__field visually-hidden" type="radio" name="sim-type" id="sim-plastic" checked>
-                      <label class="custom-radio__label" for="sim-plastic">
-                        <span class="custom-radio__text">Пластиковая</span>
-                        <span class="custom-radio__icon-wraper">
-                        <svg class="custom-radio__icon" width="12" height="9">
-                          <use xlink:href="images/sprite.svg#checked"></use>
-                        </svg>
-                      </span>
-                      </label>
-                    </div>
-                  </li>
-                  <li class="order-form__sim-types-item">
-                    <div class="custom-radio--small">
-                      <input class="custom-radio__field visually-hidden" type="radio" name="sim-type" id="sim-esim">
-                      <label class="custom-radio__label" for="sim-esim">
-                        <span class="custom-radio__text">eSim</span>
-                        <span class="custom-radio__icon-wraper">
-                        <svg class="custom-radio__icon" width="12" height="9">
-                          <use xlink:href="images/sprite.svg#checked"></use>
-                        </svg>
-                      </span>
-                      </label>
-                    </div>
-                  </li>
-                </ul>
-  
-              </fieldset>
+              <div class="order-form__wraper">
+                <fieldset class="order-form__sim-type">
+                  <legend class="order-form__sim-type-legend">
+                    Выберите тип SIM-карты
+                  </legend>
+                  <ul class="order-form__sim-types-list">
+                    <li class="order-form__sim-types-item">
+                      <div class="custom-radio--small">
+                        <input class="custom-radio__field visually-hidden" type="radio" name="sim-type" id="sim-plastic" checked>
+                        <label class="custom-radio__label" for="sim-plastic">
+                          <span class="custom-radio__text">Пластиковая</span>
+                          <span class="custom-radio__icon-wraper">
+                          <svg class="custom-radio__icon" width="12" height="9">
+                            <use xlink:href="images/sprite.svg#checked"></use>
+                          </svg>
+                        </span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="order-form__sim-types-item">
+                      <div class="custom-radio--small">
+                        <input class="custom-radio__field visually-hidden" type="radio" name="sim-type" id="sim-esim">
+                        <label class="custom-radio__label" for="sim-esim">
+                          <span class="custom-radio__text">eSim</span>
+                          <span class="custom-radio__icon-wraper">
+                          <svg class="custom-radio__icon" width="12" height="9">
+                            <use xlink:href="images/sprite.svg#checked"></use>
+                          </svg>
+                        </span>
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </fieldset>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="text" name="FIO" id="fio" placeholder="Иванов Иван Иванович" required>
+                  <label class="custom-input__label" for="fio">ФИО*</label>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="tel" name="phone" id="phone" placeholder="+7 (9__) ___-__-__" required>
+                  <label class="custom-input__label" for="fio">Контактный номер*</label>
+                </div>
+                <div class="custom-input">
+                  <input class="custom-input__field" type="email" name="email" id="email" placeholder="ivan@email.ru">
+                  <label class="custom-input__label" for="fio">Электронная почта</label>
+                </div>
+              </div>
+              <div class="custom-checkbox">
+                <input class="custom-checkbox__field visually-hidden" type="checkbox" name="num-transfer" id="num-transfer">
+                <label class="custom-checkbox__label" for="num-transfer">
+                  <span class="custom-checkbox__text">Перенести номер и получать +5 ГБ ежемесячно</span>
+                </label>
+              </div>
             </form>
             </div>
             
