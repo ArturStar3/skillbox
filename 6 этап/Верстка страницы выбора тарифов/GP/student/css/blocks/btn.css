@@ -10,3 +10,11 @@
     border-radius: 16px;
     cursor: pointer;
 }
+
+.btn--action {
+    background: linear-gradient(270deg, #9548BD 0%, #547CCB 100%);
+}
+
+.btn--win {
+    background: linear-gradient(270deg, #D812AE 0%, #9548BD 100%);
+}

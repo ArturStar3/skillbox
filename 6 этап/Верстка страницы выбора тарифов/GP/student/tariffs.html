@@ -31,123 +31,369 @@
           <div class="container">
             <h1 class="tariffs__heading">Тарифы <span class="tariffs__heading--hashtag">#Разумныйвыбор</span></h1>
             <ul class="tariffs__list">
-            <li class="tariffs__item">
-              <div class="features">
-                <h2 class="features__heading">
-                  Пробуй
-                </h2>
-                <ul class="features__values-list">
-                  <li class="features__values-item"><span class="features__value">5</span><span class="features__metric">ГБ</span></li>
-                  <li class="features__values-item"><span class="features__value">400</span><span class="features__metric">мин</span></li>
-                  <li class="features__values-item"><span class="features__value">50</span><span class="features__metric">sms</span></li>
-                </ul>
-                <ul class="features__benefits-list">
-                  <li class="features__benefits-item">
-                    <svg class="features__benefits-icon" width="40" height="40">
-                      <use xlink:href="images/sprite.svg#unlimit"></use>
+              <!-- Пробуй -->
+              <li class="tariffs__item">
+                <div class="features">
+                  <h2 class="features__heading">
+                    Пробуй
+                  </h2>
+                  <ul class="features__values-list">
+                    <li class="features__values-item"><span class="features__value">5</span><span class="features__metric">ГБ</span></li>
+                    <li class="features__values-item"><span class="features__value">400</span><span class="features__metric">мин</span></li>
+                    <li class="features__values-item"><span class="features__value">50</span><span class="features__metric">sms</span></li>
+                  </ul>
+                  <ul class="features__benefits-list">
+                    <li class="features__benefits-item">
+                      <svg class="features__benefits-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#unlimit"></use>
+                      </svg>
+                      <span class="features__benefits-text">Безлимит внутри сети</span>
+                    </li>
+                    <li class="features__benefits-item">
+                      <svg class="features__benefits-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#unlimit"></use>
+                      </svg>
+                      <span class="features__benefits-text">Мессенджеры без<span class="features__benefits-text--new-line">ограничений</span></span>
+                    </li>
+                    <li class="features__benefits-item">
+                      <svg class="features__benefits-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#direction"></use>
+                      </svg>
+                      <span class="features__benefits-text">Перенос остатков<span class="features__benefits-text--new-line">sms, минут и Гб</span></span>
+                    </li>
+                    <li class="features__benefits-item">
+                      <svg class="features__benefits-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#plus"></use>
+                      </svg>
+                      <span class="features__benefits-text">Доп. пакеты услуг</span>
+                    </li>
+                  </ul>
+                  <a href="#" class="features__details-link">
+                    <span class="features__details-text">Подробнее о тарифе</span>
+                    <svg class="features__details-icon" width="5" height="10">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
                     </svg>
-                    <span class="features__benefits-text">Безлимит внутри сети</span>
-                  </li>
-                  <li class="features__benefits-item">
-                    <svg class="features__benefits-icon" width="40" height="40">
-                      <use xlink:href="images/sprite.svg#unlimit"></use>
-                    </svg>
-                    <span class="features__benefits-text">Мессенджеры без<span class="features__benefits-text--new-line">ограничений</span></span>
-                  </li>
-                  <li class="features__benefits-item">
-                    <svg class="features__benefits-icon" width="40" height="40">
-                      <use xlink:href="images/sprite.svg#direction"></use>
-                    </svg>
-                    <span class="features__benefits-text">Перенос остатков<span class="features__benefits-text--new-line">sms, минут и Гб</span></span>
-                  </li>
-                  <li class="features__benefits-item">
-                    <svg class="features__benefits-icon" width="40" height="40">
-                      <use xlink:href="images/sprite.svg#plus"></use>
-                    </svg>
-                    <span class="features__benefits-text">Доп. пакеты услуг</span>
-                  </li>
-                </ul>
-                <a href="#" class="features__details-link">
-                  <span class="features__details-text">Подробнее о тарифе</span>
-                  <svg class="features__details-icon" width="5" height="10">
-                    <use xlink:href="images/sprite.svg#arrow"></use>
-                  </svg>
-                </a>
-                <ul class="features__price-list">
-                  <li class="features__price-item">
-                    <div class="custom-radio">
-                      <input type="radio" class="custom-radio__field visually-hidden" id="price-month" name="price" checked>
-                      <label class="custom-radio__label" for="price-month">
-                        <span class="custom-radio__pay-coast">
-                          <span class="custom-radio__pay-value">200 ₽</span>
-                          <span class="custom-radio__pay-billing">/ месяц</span>
-                        </span>
-                        <span class="custom-radio__pay-note">
-                          <span class="custom-radio__pay-row"><span class="custom-radio__pay-note--bold">400 ₽</span> в месяц без трат</span>
-                          <span class="custom-radio__pay-row">по карте Газпромбанка</span>
-                        </span>
-                        <span class="custom-radio__icon-wraper">
-                          <svg class="custom-radio__icon" width="12" height="9">
-                            <use xlink:href="images/sprite.svg#checked"></use>
-                          </svg>
-                        </span>
-                        
-                      </label>
+                  </a>
+                  <ul class="features__price-list">
+                    <li class="features__price-item">
+                      <div class="custom-radio">
+                        <input type="radio" class="custom-radio__field visually-hidden" id="try-price-month" name="try-price" checked>
+                        <label class="custom-radio__label" for="try-price-month">
+                          <span class="custom-radio__pay-coast">
+                            <span class="custom-radio__pay-value">200 ₽</span>
+                            <span class="custom-radio__pay-billing">/ месяц</span>
+                          </span>
+                          <span class="custom-radio__pay-note">
+                            <span class="custom-radio__pay-row"><span class="custom-radio__pay-note--bold">400 ₽</span> в месяц без трат</span>
+                            <span class="custom-radio__pay-row">по карте Газпромбанка</span>
+                          </span>
+                          <span class="custom-radio__icon-wraper">
+                            <svg class="custom-radio__icon" width="12" height="9">
+                              <use xlink:href="images/sprite.svg#checked"></use>
+                            </svg>
+                          </span>
+                          
+                        </label>
 
-                    </div>
-                  </li>
-                  <li class="features__price-item">
-                    <div class="custom-radio">
-                      <input type="radio" class="custom-radio__field visually-hidden" id="price-half-year" name="price">
-                      <label class="custom-radio__label" for="price-half-year">
-                        <span class="custom-radio__pay-period">Предоплата за 6 месяцев</span>
-                        <span class="custom-radio__pay-coast custom-radio__pay-coast--space">
-                          <span class="custom-radio__pay-value">1080 ₽</span>
-                        </span>
-                        <span class="custom-radio__pay-note">
-                          <span class="custom-radio__pay-row">Экономия <span class="custom-radio__pay-note--bold">1320 ₽</span></span>
-                        </span>
-                        
-                        <span class="custom-radio__icon-wraper">
-                          <svg class="custom-radio__icon" width="12" height="9">
-                            <use xlink:href="images/sprite.svg#checked"></use>
-                          </svg>
-                        </span>
-                        
-                      </label>
+                      </div>
+                    </li>
+                    <li class="features__price-item">
+                      <div class="custom-radio">
+                        <input type="radio" class="custom-radio__field visually-hidden" id="try-price-half-year" name="try-price">
+                        <label class="custom-radio__label" for="try-price-half-year">
+                          <span class="custom-radio__pay-period">Предоплата за 6 месяцев</span>
+                          <span class="custom-radio__pay-coast custom-radio__pay-coast--space">
+                            <span class="custom-radio__pay-value">1080 ₽</span>
+                          </span>
+                          <span class="custom-radio__pay-note">
+                            <span class="custom-radio__pay-row">Экономия <span class="custom-radio__pay-note--bold">1320 ₽</span></span>
+                          </span>
+                          
+                          <span class="custom-radio__icon-wraper">
+                            <svg class="custom-radio__icon" width="12" height="9">
+                              <use xlink:href="images/sprite.svg#checked"></use>
+                            </svg>
+                          </span>
+                          
+                        </label>
 
-                    </div>
-                  </li>
-                  <li class="features__price-item">
-                    <div class="custom-radio">
-                      <input type="radio" class="custom-radio__field visually-hidden" id="price-year" name="price">
-                      <label class="custom-radio__label" for="price-year">
-                        <span class="custom-radio__pay-period">Предоплата за 12 месяцев</span>
-                        <span class="custom-radio__pay-coast custom-radio__pay-coast--space">
-                          <span class="custom-radio__pay-value">1680 ₽</span>
-                        </span>
-                        <span class="custom-radio__pay-note">
-                          <span class="custom-radio__pay-row">Экономия <span class="custom-radio__pay-note--bold">3120 ₽</span></span>
-                        </span>
-                        
-                        <span class="custom-radio__icon-wraper">
-                          <svg class="custom-radio__icon" width="12" height="9">
-                            <use xlink:href="images/sprite.svg#checked"></use>
-                          </svg>
-                        </span>
-                        
-                      </label>
+                      </div>
+                    </li>
+                    <li class="features__price-item">
+                      <div class="custom-radio">
+                        <input type="radio" class="custom-radio__field visually-hidden" id="try-price-year" name="try-price">
+                        <label class="custom-radio__label" for="try-price-year">
+                          <span class="custom-radio__pay-period">Предоплата за 12 месяцев</span>
+                          <span class="custom-radio__pay-coast custom-radio__pay-coast--space">
+                            <span class="custom-radio__pay-value">1680 ₽</span>
+                          </span>
+                          <span class="custom-radio__pay-note">
+                            <span class="custom-radio__pay-row">Экономия <span class="custom-radio__pay-note--bold">3120 ₽</span></span>
+                          </span>
+                          
+                          <span class="custom-radio__icon-wraper">
+                            <svg class="custom-radio__icon" width="12" height="9">
+                              <use xlink:href="images/sprite.svg#checked"></use>
+                            </svg>
+                          </span>
+                          
+                        </label>
 
-                    </div>
-                  </li>
-                </ul>
-                <button class="btn" type="button">Заказать SIM-карту</button>
-              </div>
-            </li>
-            <li class="tariffs__item"></li>
-            <li class="tariffs__item"></li>
+                      </div>
+                    </li>
+                  </ul>
+                  <button class="btn" type="button">Заказать SIM-карту</button>
+                </div>
+              </li>
+              <!-- Действуй -->
+              <li class="tariffs__item">
+                <div class="features">
+                  <h2 class="features__heading">
+                    Действуй
+                  </h2>
+                  <ul class="features__values-list">
+                    <li class="features__values-item"><span class="features__value">20</span><span class="features__metric">ГБ</span></li>
+                    <li class="features__values-item"><span class="features__value">600</span><span class="features__metric">мин</span></li>
+                    <li class="features__values-item"><span class="features__value">50</span><span class="features__metric">sms</span></li>
+                  </ul>
+                  <ul class="features__benefits-list">
+                    <li class="features__benefits-item">
+                      <svg class="features__benefits-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#unlimit"></use>
+                      </svg>
+                      <span class="features__benefits-text">Безлимит внутри сети</span>
+                    </li>
+                    <li class="features__benefits-item">
+                      <svg class="features__benefits-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#unlimit"></use>
+                      </svg>
+                      <span class="features__benefits-text">Мессенджеры без<span class="features__benefits-text--new-line">ограничений</span></span>
+                    </li>
+                    <li class="features__benefits-item">
+                      <svg class="features__benefits-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#direction"></use>
+                      </svg>
+                      <span class="features__benefits-text">Перенос остатков<span class="features__benefits-text--new-line">sms, минут и Гб</span></span>
+                    </li>
+                    <li class="features__benefits-item">
+                      <svg class="features__benefits-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#plus"></use>
+                      </svg>
+                      <span class="features__benefits-text">Доп. пакеты услуг</span>
+                    </li>
+                  </ul>
+                  <a href="#" class="features__details-link">
+                    <span class="features__details-text">Подробнее о тарифе</span>
+                    <svg class="features__details-icon" width="5" height="10">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
+                  <ul class="features__price-list">
+                    <li class="features__price-item">
+                      <div class="custom-radio">
+                        <input type="radio" class="custom-radio__field visually-hidden" id="action-price-month" name="action-price" checked>
+                        <label class="custom-radio__label" for="action-price-month">
+                          <span class="custom-radio__pay-coast">
+                            <span class="custom-radio__pay-value">300 ₽</span>
+                            <span class="custom-radio__pay-billing">/ месяц</span>
+                          </span>
+                          <span class="custom-radio__pay-note">
+                            <span class="custom-radio__pay-row"><span class="custom-radio__pay-note--bold">600 ₽</span> в месяц без трат</span>
+                            <span class="custom-radio__pay-row">по карте Газпромбанка</span>
+                          </span>
+                          <span class="custom-radio__icon-wraper">
+                            <svg class="custom-radio__icon" width="12" height="9">
+                              <use xlink:href="images/sprite.svg#checked"></use>
+                            </svg>
+                          </span>
+                          
+                        </label>
+
+                      </div>
+                    </li>
+                    <li class="features__price-item">
+                      <div class="custom-radio">
+                        <input type="radio" class="custom-radio__field visually-hidden" id="action-price-half-year" name="action-price">
+                        <label class="custom-radio__label" for="action-price-half-year">
+                          <span class="custom-radio__pay-period">Предоплата за 6 месяцев</span>
+                          <span class="custom-radio__pay-coast custom-radio__pay-coast--space">
+                            <span class="custom-radio__pay-value">1620 ₽</span>
+                          </span>
+                          <span class="custom-radio__pay-note">
+                            <span class="custom-radio__pay-row">Экономия <span class="custom-radio__pay-note--bold">1980 ₽</span></span>
+                          </span>
+                          
+                          <span class="custom-radio__icon-wraper">
+                            <svg class="custom-radio__icon" width="12" height="9">
+                              <use xlink:href="images/sprite.svg#checked"></use>
+                            </svg>
+                          </span>
+                          
+                        </label>
+
+                      </div>
+                    </li>
+                    <li class="features__price-item">
+                      <div class="custom-radio">
+                        <input type="radio" class="custom-radio__field visually-hidden" id="action-price-year" name="action-price">
+                        <label class="custom-radio__label" for="action-price-year">
+                          <span class="custom-radio__pay-period">Предоплата за 12 месяцев</span>
+                          <span class="custom-radio__pay-coast custom-radio__pay-coast--space">
+                            <span class="custom-radio__pay-value">2520 ₽</span>
+                          </span>
+                          <span class="custom-radio__pay-note">
+                            <span class="custom-radio__pay-row">Экономия <span class="custom-radio__pay-note--bold">4680 ₽</span></span>
+                          </span>
+                          
+                          <span class="custom-radio__icon-wraper">
+                            <svg class="custom-radio__icon" width="12" height="9">
+                              <use xlink:href="images/sprite.svg#checked"></use>
+                            </svg>
+                          </span>
+                          
+                        </label>
+
+                      </div>
+                    </li>
+                  </ul>
+                  <button class="btn btn--action" type="button">Заказать SIM-карту</button>
+                </div>
+              </li>
+              <!-- Побеждай -->
+              <li class="tariffs__item">
+                <div class="features">
+                  <h2 class="features__heading">
+                    Побеждай
+                  </h2>
+                  <ul class="features__values-list">
+                    <li class="features__values-item"><span class="features__value">40</span><span class="features__metric">ГБ</span></li>
+                    <li class="features__values-item"><span class="features__value">1000</span><span class="features__metric">мин</span></li>
+                    <li class="features__values-item"><span class="features__value">50</span><span class="features__metric">sms</span></li>
+                  </ul>
+                  <ul class="features__benefits-list">
+                    <li class="features__benefits-item">
+                      <svg class="features__benefits-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#unlimit"></use>
+                      </svg>
+                      <span class="features__benefits-text">Безлимит внутри сети</span>
+                    </li>
+                    <li class="features__benefits-item">
+                      <svg class="features__benefits-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#unlimit"></use>
+                      </svg>
+                      <span class="features__benefits-text">Мессенджеры без<span class="features__benefits-text--new-line">ограничений</span></span>
+                    </li>
+                    <li class="features__benefits-item">
+                      <svg class="features__benefits-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#direction"></use>
+                      </svg>
+                      <span class="features__benefits-text">Перенос остатков<span class="features__benefits-text--new-line">sms, минут и Гб</span></span>
+                    </li>
+                    <li class="features__benefits-item">
+                      <svg class="features__benefits-icon" width="40" height="40">
+                        <use xlink:href="images/sprite.svg#plus"></use>
+                      </svg>
+                      <span class="features__benefits-text">Доп. пакеты услуг</span>
+                    </li>
+                  </ul>
+                  <a href="#" class="features__details-link">
+                    <span class="features__details-text">Подробнее о тарифе</span>
+                    <svg class="features__details-icon" width="5" height="10">
+                      <use xlink:href="images/sprite.svg#arrow"></use>
+                    </svg>
+                  </a>
+                  <ul class="features__price-list">
+                    <li class="features__price-item">
+                      <div class="custom-radio">
+                        <input type="radio" class="custom-radio__field visually-hidden" id="win-price-month" name="win-price" checked>
+                        <label class="custom-radio__label" for="win-price-month">
+                          <span class="custom-radio__pay-coast">
+                            <span class="custom-radio__pay-value">450 ₽</span>
+                            <span class="custom-radio__pay-billing">/ месяц</span>
+                          </span>
+                          <span class="custom-radio__pay-note">
+                            <span class="custom-radio__pay-row"><span class="custom-radio__pay-note--bold">900 ₽</span> в месяц без трат</span>
+                            <span class="custom-radio__pay-row">по карте Газпромбанка</span>
+                          </span>
+                          <span class="custom-radio__icon-wraper">
+                            <svg class="custom-radio__icon" width="12" height="9">
+                              <use xlink:href="images/sprite.svg#checked"></use>
+                            </svg>
+                          </span>
+                          
+                        </label>
+
+                      </div>
+                    </li>
+                    <li class="features__price-item">
+                      <div class="custom-radio">
+                        <input type="radio" class="custom-radio__field visually-hidden" id="win-price-half-year" name="win-price">
+                        <label class="custom-radio__label" for="win-price-half-year">
+                          <span class="custom-radio__pay-period">Предоплата за 6 месяцев</span>
+                          <span class="custom-radio__pay-coast custom-radio__pay-coast--space">
+                            <span class="custom-radio__pay-value">24300 ₽</span>
+                          </span>
+                          <span class="custom-radio__pay-note">
+                            <span class="custom-radio__pay-row">Экономия <span class="custom-radio__pay-note--bold">29700 ₽</span></span>
+                          </span>
+                          
+                          <span class="custom-radio__icon-wraper">
+                            <svg class="custom-radio__icon" width="12" height="9">
+                              <use xlink:href="images/sprite.svg#checked"></use>
+                            </svg>
+                          </span>
+                          
+                        </label>
+
+                      </div>
+                    </li>
+                    <li class="features__price-item">
+                      <div class="custom-radio">
+                        <input type="radio" class="custom-radio__field visually-hidden" id="win-price-year" name="win-price">
+                        <label class="custom-radio__label" for="win-price-year">
+                          <span class="custom-radio__pay-period">Предоплата за 12 месяцев</span>
+                          <span class="custom-radio__pay-coast custom-radio__pay-coast--space">
+                            <span class="custom-radio__pay-value">37800 ₽</span>
+                          </span>
+                          <span class="custom-radio__pay-note">
+                            <span class="custom-radio__pay-row">Экономия <span class="custom-radio__pay-note--bold">7020 ₽</span></span>
+                          </span>
+                          
+                          <span class="custom-radio__icon-wraper">
+                            <svg class="custom-radio__icon" width="12" height="9">
+                              <use xlink:href="images/sprite.svg#checked"></use>
+                            </svg>
+                          </span>
+                          
+                        </label>
+
+                      </div>
+                    </li>
+                  </ul>
+                  <button class="btn btn--win" type="button">Заказать SIM-карту</button>
+                </div>
+              </li>
+
           </ul>
           </div>
+        </section>
+        <section class="order">
+          <div class="container">
+            <h2 class="order__title">Заказать SIM-карту Газпромбанк Мобайл</h2>
+            <form action="#" class="order-form" method="POST">
+              <ul class="order-form__steps-list">
+                <li class="order-form__steps-item">
+                  <span class="order-form__step-number">Шаг 1</span>
+                  <span class="order-form__step__action">Заказ SIM-карты</span>
+                </li>
+                <li class="order-form__steps-item">
+                  <span class="order-form__step-number">Шаг 1</span>
+                  <span class="order-form__step__action">Заказ SIM-карты</span>
+                </li>
+              </ul>
+            </form>
+          </div>
+          
         </section>
     </main>
     <footer class="footer">

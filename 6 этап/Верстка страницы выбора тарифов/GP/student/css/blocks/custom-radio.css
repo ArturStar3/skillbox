@@ -6,6 +6,7 @@
     border-radius: 20px;
     position: relative;
     cursor: pointer;
+    user-select: none;
 }
 
 .custom-radio__field:checked + .custom-radio__label {
