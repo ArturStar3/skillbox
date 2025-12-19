@@ -87,3 +87,37 @@
 .custom-radio__pay-note--bold {
     font-weight: 700;
 }
+
+.custom-radio--small {
+    position: relative;
+    display: flex;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 115%;
+}
+
+.custom-radio--small .custom-radio__label{
+    border: none;
+    padding: 0 0 0 36px;
+}
+
+.custom-radio--small > .custom-radio__field:checked + .custom-radio__label{
+    border: none;
+}
+
+.custom-radio--small > .custom-radio__field:checked + .custom-radio__label .custom-radio__icon-wraper {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-radio--small .custom-radio__label::before {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.order-form__sim-types-list {
+    display: flex;
+    gap: 28px;
+}

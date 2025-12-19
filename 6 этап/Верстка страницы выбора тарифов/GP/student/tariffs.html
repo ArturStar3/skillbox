@@ -380,18 +380,72 @@
         <section class="order">
           <div class="container">
             <h2 class="order__title">Заказать SIM-карту Газпромбанк Мобайл</h2>
-            <form action="#" class="order-form" method="POST">
-              <ul class="order-form__steps-list">
-                <li class="order-form__steps-item">
-                  <span class="order-form__step-number">Шаг 1</span>
-                  <span class="order-form__step__action">Заказ SIM-карты</span>
+            <div class="order__frame">
+              <ul class="order__steps-list">
+                <li class="order__steps-item order__steps-item--current">
+                  <div class="order__steps-wraper">
+                    <span class="order__step-number">Шаг 1</span>
+                    <span class="order__step__action">Заказ SIM-карты</span>
+                  </div>
                 </li>
-                <li class="order-form__steps-item">
-                  <span class="order-form__step-number">Шаг 1</span>
-                  <span class="order-form__step__action">Заказ SIM-карты</span>
+                <li class="order__steps-item">
+                  <div class="order__steps-wraper">
+                    <span class="order__step-number">Шаг 2</span>
+                    <span class="order__step__action">Подтверждение</span>
+                  </div>
+                </li>
+                <li class="order__steps-item">
+                  <div class="order__steps-wraper">
+                    <span class="order__step-number">Шаг 3</span>
+                    <span class="order__step__action">Выбор тарифа</span>
+                  </div>
+                </li>
+                <li class="order__steps-item">
+                  <div class="order__steps-wraper">
+                    <span class="order__step-number">Шаг 4</span>
+                    <span class="order__step__action">Доставка</span>
+                  </div>
                 </li>
               </ul>
+            
+            <form class="order-form" action="#" method="POST">
+              <fieldset class="order-form__sim-type">
+                <legend class="order-form__sim-type-legend">
+                  Выберите тип SIM-карты
+                </legend>
+                <ul class="order-form__sim-types-list">
+                  <li class="order-form__sim-types-item">
+                    <div class="custom-radio--small">
+                      <input class="custom-radio__field visually-hidden" type="radio" name="sim-type" id="sim-plastic" checked>
+                      <label class="custom-radio__label" for="sim-plastic">
+                        <span class="custom-radio__text">Пластиковая</span>
+                        <span class="custom-radio__icon-wraper">
+                        <svg class="custom-radio__icon" width="12" height="9">
+                          <use xlink:href="images/sprite.svg#checked"></use>
+                        </svg>
+                      </span>
+                      </label>
+                    </div>
+                  </li>
+                  <li class="order-form__sim-types-item">
+                    <div class="custom-radio--small">
+                      <input class="custom-radio__field visually-hidden" type="radio" name="sim-type" id="sim-esim">
+                      <label class="custom-radio__label" for="sim-esim">
+                        <span class="custom-radio__text">eSim</span>
+                        <span class="custom-radio__icon-wraper">
+                        <svg class="custom-radio__icon" width="12" height="9">
+                          <use xlink:href="images/sprite.svg#checked"></use>
+                        </svg>
+                      </span>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+  
+              </fieldset>
             </form>
+            </div>
+            
           </div>
           
         </section>

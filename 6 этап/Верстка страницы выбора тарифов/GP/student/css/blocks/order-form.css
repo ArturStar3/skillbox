@@ -1,45 +1,13 @@
 .order-form {
-    box-shadow: 0px 10px 24px 0px #2023341A;
-    border-radius: 20px;
-    padding: 40px 60px;
-    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
-.order-form__steps-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 700;
+.order-form__sim-type-legend {
+    margin: 0 auto 20px 0;
+    font-weight: 500;
     font-size: 14px;
     line-height: 115%;
-    letter-spacing: -0.02em;
-    gap: 10px;
-    position: relative;
-}
-
-.order-form__steps-list {
-    display: flex;
-    justify-content: space-between;
-}
-
-.order-form__steps-item:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 86px;
-    height: 2px;
-    background-color: #F0F0F0;
-    border-radius: 50%;
-}
-
-.order-form__step-number {
-    border-radius: 60px;
-    background-color: #239DD6;
-    padding: 4px 14px;
-    color: #FFFFFF;
-}
-
-.order-form__step-action {
-    letter-spacing: 0;
+    color: #858385;
 }
