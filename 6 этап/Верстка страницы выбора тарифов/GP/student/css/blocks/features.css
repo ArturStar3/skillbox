@@ -1,8 +1,25 @@
+.features__heading-wraper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    gap: 8px;
+}
+
 .features__heading {
     font-weight: 700;
     font-size: 28px;
     line-height: 120%;
-    margin-bottom: 35px;
+}
+
+.features__heading-badge {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 115%;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, #537CCB 0%, #9648BD 100%);
+    padding: 6px 12px;
+    color: #FFFFFF;
+    border-radius: 60px;
 }
 
 .features__values-list {
