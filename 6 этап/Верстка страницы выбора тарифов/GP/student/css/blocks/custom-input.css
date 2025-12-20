@@ -1,9 +1,6 @@
 .custom-input {
     position: relative;
-    height: 68px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    padding-top: 28px;
 }
 
 .custom-input__field {
@@ -12,6 +9,9 @@
     padding: 12px 20px;
     border-radius: 8px;
     width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 115%;
 }
 
 .custom-input:hover .custom-input__field {
@@ -38,4 +38,21 @@
     font-size: 14px;
     line-height: 115%;
     color: #858385;
+}
+
+.custom-input__error-message {
+    display: none;
+}
+
+.custom-input--error .custom-input__field {
+    background-color: #FBE2E0;
+}
+
+.custom-input--error .custom-input__error-message {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 115%;
+    color: #D72522;
+    margin-top: 4px;
 }

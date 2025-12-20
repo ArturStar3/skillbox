@@ -68,3 +68,15 @@
     color: #239DD6;
 
 }
+
+.custom-checkbox:hover .custom-checkbox__label::before {
+    border: 2px solid #1883B6;
+}
+
+.custom-checkbox__field:focus-visible + .custom-checkbox__label::before {
+    border: 2px solid #1883B6;
+}
+
+.custom-checkbox--error .custom-checkbox__label::before {
+    border: 2px solid #D72522;
+}

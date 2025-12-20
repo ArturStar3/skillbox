@@ -9,6 +9,14 @@
     user-select: none;
 }
 
+.custom-radio:hover .custom-radio__label {
+    border: 2px solid #259DD6;
+}
+
+.custom-radio__field:focus-visible + .custom-radio__label {
+    border: 2px solid #259DD6;
+}
+
 .custom-radio__field:checked + .custom-radio__label {
     border: 2px solid #259DD6;
 }
@@ -102,6 +110,14 @@
     padding: 0 0 0 36px;
 }
 
+.custom-radio--small:hover .custom-radio__label::before {
+    border: 2px solid #1883B6;
+}
+
+.custom-radio--small .custom-radio__field:focus-visible + .custom-radio__label::before {
+    border: 2px solid #1883B6;
+}
+
 .custom-radio--small > .custom-radio__field:checked + .custom-radio__label{
     border: none;
 }
@@ -121,4 +137,8 @@
 .order-form__sim-types-list {
     display: flex;
     gap: 28px;
+}
+
+.custom-radio--error .custom-radio__label:before {
+    border: 2px solid #D72522;
 }
