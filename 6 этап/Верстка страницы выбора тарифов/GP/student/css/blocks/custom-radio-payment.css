@@ -1,0 +1,98 @@
+.custom-radio-payment__label {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px 16px;
+    border: 2px solid #E2E4E8;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-radio-payment:hover .custom-radio-payment__label {
+    border: 2px solid #259DD6;
+}
+
+.custom-radio-payment__field:focus-visible + .custom-radio-payment__label {
+    border: 2px solid #259DD6;
+}
+
+.custom-radio-payment__field:checked + .custom-radio-payment__label {
+    border: 2px solid #259DD6;
+}
+
+.custom-radio-payment__label::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #259DD6;
+    border-radius: 50%;
+    top: 16px;
+    right: 16px;
+}
+
+.custom-radio-payment__field:checked + .custom-radio-payment__label::before {
+    background-color: #259DD6;
+}
+
+.custom-radio-payment__icon-wraper {
+    display: none;
+}
+
+.custom-radio-payment__field:checked + .custom-radio-payment__label .custom-radio-payment__icon-wraper {
+    display: flex;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    right: 16px;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.custom-radio-payment__pay-period {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    margin-bottom: 8px;
+}
+
+.custom-radio-payment__pay-coast {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.custom-radio-payment__pay-coast--space {
+    margin-bottom: 8px;
+}
+
+.custom-radio-payment__pay-value {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+}
+
+.custom-radio-payment__pay-billing {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.custom-radio-payment__pay-note {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.custom-radio-payment__pay-row {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 130%;
+}
+
+.custom-radio-payment__pay-note-bold {
+    font-weight: 700;
+}

@@ -14,7 +14,7 @@
     color: #343033;
 }
 
-.tariffs__heading--hashtag {
+.tariffs__heading-hashtag {
     color: #259DD6;
 }
 
@@ -25,10 +25,6 @@
 }
 
 .tariffs__item {
-    width: 340px;
-    border: 1px solid #E2E4E8;
-    background-color: #FFFFFF;
-    border-radius: 28px;
-    padding: 36px 32px 24px;
-    text-align-last: left;
+    width: calc((100% - 32px) / 3);
+    
 }
