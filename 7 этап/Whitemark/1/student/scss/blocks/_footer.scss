@@ -47,6 +47,11 @@
     width: 133px;
     height: 32px;
     margin: 0 0 11px 0;
+
+    @include vp-1023 {
+      width: 102px;
+      height: 24px;
+    }
   }
 
   &__slogan {
@@ -55,6 +60,11 @@
     color: $color-bunting;
     text-align: center;
     text-transform: uppercase;
+
+    @include vp-1023 {
+      font-size: 10px;
+      line-height: 14px;
+    }
   }
 
   &__social-list {
