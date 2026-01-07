@@ -467,6 +467,9 @@ img {
   text-decoration: none;
   text-transform: uppercase;
 }
+.footer__nav-link:hover, .footer__nav-link:focus-visible {
+  color: #a99e96;
+}
 .footer__info {
   display: flex;
   flex-direction: column;
@@ -526,6 +529,9 @@ img {
 .footer__social-item:first-child .footer__social-link {
   border-left: 1px solid #e9eaed;
 }
+.footer__social-item:hover .footer__social-link {
+  border-left: 1px solid #a99e96;
+}
 .footer__social-link {
   display: flex;
   justify-content: center;
@@ -535,6 +541,10 @@ img {
   color: #212e4a;
   border: 1px solid #e9eaed;
   border-left: none;
+}
+.footer__social-link:hover, .footer__social-link:focus-visible {
+  color: #a99e96;
+  border-color: #a99e96;
 }
 @media (max-width: 1024px) {
   .footer__social-link {
@@ -573,6 +583,16 @@ img {
 .text-block {
   padding: 0 0 83px;
 }
+@media (max-width: 1024px) {
+  .text-block {
+    padding: 0 0 65px;
+  }
+}
+@media (max-width: 767px) {
+  .text-block {
+    padding: 0 0 40px;
+  }
+}
 .text-block * {
   width: 100%;
   max-width: 800px;
@@ -589,12 +609,18 @@ img {
     height: auto;
   }
 }
+@media (max-width: 767px) {
+  .text-block img {
+    margin: 0 auto 20px;
+  }
+}
 .text-block figure {
   margin: 0 auto 48px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .text-block figure {
-    width: 600px;
+    width: 335px;
+    margin: 0 auto 40px;
   }
 }
 .text-block figure img {
@@ -609,6 +635,13 @@ img {
     margin: 0 auto 12px;
   }
 }
+@media (max-width: 767px) {
+  .text-block figure img {
+    width: 335px;
+    height: auto;
+    margin: 0 0 11px;
+  }
+}
 .text-block figcaption {
   font-size: 14px;
   line-height: 18px;
@@ -618,6 +651,12 @@ img {
 @media (max-width: 1024px) {
   .text-block figcaption {
     font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .text-block figcaption {
+    font-size: 9px;
+    line-height: 14px;
   }
 }
 .text-block h1 {
@@ -635,6 +674,13 @@ img {
     line-height: 28px;
   }
 }
+@media (max-width: 767px) {
+  .text-block h1 {
+    font-size: 23px;
+    line-height: 28px;
+    margin: 0 auto 40px;
+  }
+}
 .text-block h2 {
   margin: 48px auto 16px;
   font-size: 32px;
@@ -644,9 +690,14 @@ img {
 }
 @media (max-width: 1024px) {
   .text-block h2 {
-    font-size: 18px;
+    font-size: 19px;
     line-height: 24px;
     margin: 48px 64px 16px;
+  }
+}
+@media (max-width: 767px) {
+  .text-block h2 {
+    margin: 40px 0 21px;
   }
 }
 .text-block p {
@@ -657,8 +708,16 @@ img {
 @media (max-width: 1024px) {
   .text-block p {
     margin: 0 64px 16px;
-    width: 600px;
+    width: 100%;
     font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .text-block p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
   }
 }
 .text-block blockquote {
@@ -668,8 +727,32 @@ img {
   background: linear-gradient(90deg, rgba(76, 119, 170, 0.8) 0%, rgba(52, 86, 160, 0.8) 100%);
   border-radius: 120px;
 }
+@media (max-width: 1024px) {
+  .text-block blockquote {
+    padding: 20px;
+    width: 600px;
+  }
+}
+@media (max-width: 767px) {
+  .text-block blockquote {
+    width: 335px;
+    padding: 15px;
+    margin: 0 auto 40px;
+  }
+}
 .text-block blockquote p {
   margin: 0 auto;
+}
+@media (max-width: 1024px) {
+  .text-block blockquote p {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .text-block blockquote p {
+    font-size: 13px;
+    line-height: 20px;
+  }
 }
 .text-block q {
   font-style: italic;
@@ -680,14 +763,39 @@ img {
   font-weight: 500;
   color: #c99374;
 }
+.text-block a:hover, .text-block a:focus-visible {
+  color: #a99e96;
+}
 .text-block ul {
   margin: 0 auto 16px;
   padding: 0 0 0 27px;
 }
+@media (max-width: 1024px) {
+  .text-block ul {
+    margin: 0 65px 8px;
+  }
+}
+@media (max-width: 767px) {
+  .text-block ul {
+    margin: 0 0 8px;
+    padding: 0 0 0 20px;
+  }
+}
 .text-block ul li:not(:last-child) {
   margin: 0 auto 8px;
+}
+@media (max-width: 767px) {
+  .text-block ul li:not(:last-child) {
+    margin: 0 0 4px;
+  }
 }
 .text-block li {
   font-size: 16px;
   line-height: 24px;
+}
+@media (max-width: 767px) {
+  .text-block li {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
