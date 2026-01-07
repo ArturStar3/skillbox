@@ -11,16 +11,32 @@
     max-width: 1200px;
     height: 540px;
     margin: 0 auto 28px;
+
+    @include vp-1023 {
+      width: 100%;
+      height: auto;
+    }
+
   }
 
   figure {
     margin: 0 auto 48px;
+
+    @include vp-1023 {
+      width: 600px;
+    }
   }
 
   figure img {
     width: 800px;
     height: 400px;
     margin: 0 0 12px;
+
+    @include vp-1023 {
+      width: 600px;
+      height: 300px;
+      margin: 0 auto 12px;
+    }
   }
 
   figcaption {
@@ -28,6 +44,10 @@
     line-height: 18px;
     color: $color-light-grey-60;
     text-align: right;
+
+    @include vp-1023 {
+      font-size: 13px;
+    }
   }
 
   h1 {
@@ -38,6 +58,11 @@
     line-height: 44px;
     color: $color-zorba;
     text-align: center;
+
+    @include vp-1023 {
+      font-size: 24px;
+      line-height: 28px;
+    }
   }
 
   h2 {
@@ -46,12 +71,24 @@
     font-weight: 300;
     line-height: 34px;
     color: $color-zorba;
+
+    @include vp-1023 {
+      font-size: 18px;
+      line-height: 24px;
+      margin: 48px 64px 16px;
+    }
   }
 
   p {
     margin: 0 auto 16px;
     font-size: 16px;
     line-height: 24px;
+
+    @include vp-1023 {
+      margin: 0 64px 16px;
+      width: 600px;
+      font-size: 15px;
+    }
   }
 
   blockquote {

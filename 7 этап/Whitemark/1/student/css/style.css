@@ -383,6 +383,7 @@ img {
 @media (max-width: 1024px) {
   .header {
     padding: 15px 0;
+    margin: 0 0 20px 0;
   }
 }
 .header__content {
@@ -437,8 +438,18 @@ img {
   padding: 36px 0 0;
   list-style: none;
 }
+@media (max-width: 767px) {
+  .footer__nav-list {
+    display: none;
+  }
+}
 .footer__nav-list--right {
   text-align: right;
+}
+@media (max-width: 767px) {
+  .footer__nav-list--right {
+    display: none;
+  }
 }
 .footer__nav-item:not(:last-child) {
   margin: 0 0 28px 0;
@@ -460,11 +471,21 @@ img {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 767px) {
+  .footer__info {
+    width: 100%;
+  }
+}
 .footer__logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 0 21px 0;
+}
+@media (max-width: 767px) {
+  .footer__logo {
+    margin: 0 0 20px 0;
+  }
 }
 .footer__logo-img {
   width: 133px;
@@ -496,6 +517,11 @@ img {
   margin: 0 0 21px;
   padding: 0;
   list-style: none;
+}
+@media (max-width: 767px) {
+  .footer__social-list {
+    margin: 0 0 20px;
+  }
 }
 .footer__social-item:first-child .footer__social-link {
   border-left: 1px solid #e9eaed;
@@ -557,19 +583,42 @@ img {
   height: 540px;
   margin: 0 auto 28px;
 }
+@media (max-width: 1024px) {
+  .text-block img {
+    width: 100%;
+    height: auto;
+  }
+}
 .text-block figure {
   margin: 0 auto 48px;
+}
+@media (max-width: 1024px) {
+  .text-block figure {
+    width: 600px;
+  }
 }
 .text-block figure img {
   width: 800px;
   height: 400px;
   margin: 0 0 12px;
 }
+@media (max-width: 1024px) {
+  .text-block figure img {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto 12px;
+  }
+}
 .text-block figcaption {
   font-size: 14px;
   line-height: 18px;
   color: rgba(212, 212, 212, 0.6);
   text-align: right;
+}
+@media (max-width: 1024px) {
+  .text-block figcaption {
+    font-size: 13px;
+  }
 }
 .text-block h1 {
   max-width: 1200px;
@@ -580,6 +629,12 @@ img {
   color: #a99e96;
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .text-block h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
 .text-block h2 {
   margin: 48px auto 16px;
   font-size: 32px;
@@ -587,10 +642,24 @@ img {
   line-height: 34px;
   color: #a99e96;
 }
+@media (max-width: 1024px) {
+  .text-block h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 48px 64px 16px;
+  }
+}
 .text-block p {
   margin: 0 auto 16px;
   font-size: 16px;
   line-height: 24px;
+}
+@media (max-width: 1024px) {
+  .text-block p {
+    margin: 0 64px 16px;
+    width: 600px;
+    font-size: 15px;
+  }
 }
 .text-block blockquote {
   margin: 0 auto 48px;
