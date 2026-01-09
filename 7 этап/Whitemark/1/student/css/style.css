@@ -73,7 +73,8 @@ a {
 */
 abbr[title] {
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
   border-bottom: none; /* 1 */
 }
 
@@ -363,7 +364,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container {
@@ -617,6 +619,11 @@ img {
 .text-block figure {
   margin: 0 auto 48px;
 }
+@media (max-width: 1024px) {
+  .text-block figure {
+    width: calc(100% - 128px);
+  }
+}
 @media (max-width: 767px) {
   .text-block figure {
     width: 335px;
@@ -707,8 +714,8 @@ img {
 }
 @media (max-width: 1024px) {
   .text-block p {
-    margin: 0 64px 16px;
-    width: 100%;
+    margin: 0 auto 16px;
+    width: calc(100% - 128px);
     font-size: 15px;
   }
 }
