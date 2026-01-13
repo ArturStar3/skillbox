@@ -8,6 +8,16 @@
   padding: 0;
   list-style: none;
 
+  @include vp-1023 {
+    flex-wrap: nowrap;
+    gap: 20px;
+  }
+
+  @include vp-767 {
+    align-self: unset;
+    gap: 30px;
+  }
+
   &__link {
     display: flex;
     color: $color-trout;
