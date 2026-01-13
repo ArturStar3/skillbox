@@ -10,18 +10,31 @@
   border-left: 1px solid $color-blue-charcoa;
   list-style: none;
 
+  @include vp-1023 {
+    gap: 34px;
+  }
+
   &__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: calc(33.33% - 20px);
+
+    @include vp-1023 {
+      width: 220px;
+      padding: 15px;
+    }
   }
 
   &__item--accent {
     padding: 20px;
     background-color: $color-twilight-blue;
     border-radius: 0 60px 0 60px;
+
+    @include vp-1023 {
+      padding: 15px 0 30px;
+    }
   }
 
   &__number {
@@ -30,6 +43,11 @@
     font-weight: 200;
     line-height: 60px;
     color: $color-blue-charcoa;
+
+    @include vp-1023 {
+      font-size: 40px;
+      line-height: 44px;
+    }
   }
 
   &__text {
@@ -39,5 +57,9 @@
     line-height: 22px;
     color: $color-blue-charcoa;
     text-align: center;
+
+    @include vp-1023 {
+      line-height: 20px;
+    }
   }
 }
