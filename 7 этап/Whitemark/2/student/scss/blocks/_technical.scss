@@ -1,0 +1,69 @@
+.technical {
+    padding-top: 195px;
+    font-family: $ff-imb-plex;
+
+    @include vp-1023 {
+        padding-top: 166px;
+    }
+
+    @include vp-767 {
+       padding-top: 157px; 
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include vp-1023 {
+            margin: 0 auto;
+            width: 70%;
+        }
+
+        @include vp-767 {
+            width: 87%;
+        }
+    }
+
+    &__title {
+        margin: 0 0 30px;
+        font-weight: 200;
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+
+        @include vp-1023 {
+            font-size: 28px;
+            line-height: 32px;
+            margin: 0 0 20px;
+        }
+
+        @include vp-767 {
+            font-size: 26px;
+            line-height: 24px;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        margin: 0 0 60px;
+
+        @include vp-1023 {
+            margin: 0 0 40px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+
+}

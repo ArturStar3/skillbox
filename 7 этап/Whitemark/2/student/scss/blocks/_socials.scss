@@ -21,5 +21,29 @@
   &__link {
     display: flex;
     color: $color-trout;
+
+    &:hover,
+    &:focus-visible {
+      color: $color-ecru-white;
+    }
+  }
+
+  &--technical {
+    align-self: unset;
+
+    @include vp-1023 {
+      gap: 32px;
+    }
+
+    @include vp-767 {
+      gap: 24px;
+    }
+
+    & .socials__link {
+      &:hover,
+      &:focus-visible {
+        color: $color-ecru-white;
+      }
+    }
   }
 }
