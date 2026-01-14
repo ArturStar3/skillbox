@@ -25,5 +25,10 @@
   &__title--h2 {
     font-size: 48px;
     line-height: 48px;
+
+    @include vp-1023 {
+      font-size: 40px;
+      line-height: 44px;
+    }
   }
 }

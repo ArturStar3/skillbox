@@ -73,7 +73,8 @@ a {
 */
 abbr[title] {
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
   border-bottom: none; /* 1 */
 }
 
@@ -351,7 +352,8 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
@@ -471,6 +473,12 @@ a {
   font-size: 48px;
   line-height: 48px;
 }
+@media (max-width: 1023px) {
+  .page-content__title--h2 {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
 
 .info-banner {
   display: flex;
@@ -572,6 +580,8 @@ a {
 @media (max-width: 1023px) {
   .advantages {
     gap: 34px;
+    margin: 0 auto 80px;
+    width: unset;
   }
 }
 .advantages__item {
@@ -583,7 +593,7 @@ a {
 }
 @media (max-width: 1023px) {
   .advantages__item {
-    width: 220px;
+    width: calc((100% - 68px) / 3);
     padding: 15px;
   }
 }
@@ -789,8 +799,18 @@ a {
   padding: 0;
   list-style: none;
 }
+@media (max-width: 1023px) {
+  .team-list {
+    flex-direction: column;
+  }
+}
 .team-list__item {
   width: calc(50% - 15px);
+}
+@media (max-width: 1023px) {
+  .team-list__item {
+    width: 100%;
+  }
 }
 
 .team-card {
