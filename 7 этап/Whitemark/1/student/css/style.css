@@ -73,8 +73,7 @@ a {
 */
 abbr[title] {
   text-decoration: underline; /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted; /* 2 */
+  text-decoration: underline dotted; /* 2 */
   border-bottom: none; /* 1 */
 }
 
@@ -364,8 +363,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .container {
