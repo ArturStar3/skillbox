@@ -73,7 +73,8 @@ a {
 */
 abbr[title] {
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
   border-bottom: none; /* 1 */
 }
 
@@ -351,7 +352,8 @@ img {
   display: block;
   height: auto;
   max-width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
@@ -731,7 +733,8 @@ a {
 .main-video__video {
   width: 100%;
   height: 780px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media (max-width: 1023px) {
   .main-video__video {
@@ -772,6 +775,16 @@ a {
     flex-direction: column;
     gap: 30px;
     padding: 0 0 50px;
+  }
+}
+@media (max-width: 1023px) {
+  .advantages__item:not(:first-child) .advantages__list:nth-child(3n) {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 1023px) {
+  .advantages__item:last-child {
+    padding-bottom: 35px;
   }
 }
 .advantages__inner {
@@ -819,8 +832,10 @@ a {
 }
 @media (max-width: 1023px) {
   .advantages__sublist {
-    columns: 3;
-    column-gap: 143px;
+    -moz-columns: 3;
+         columns: 3;
+    -moz-column-gap: 143px;
+         column-gap: 143px;
   }
 }
 .advantages__subitem {
@@ -844,11 +859,6 @@ a {
   }
 }
 @media (max-width: 1023px) {
-  .advantages__subitem:not(:last-child):nth-child(3n) {
-    margin-bottom: 0;
-  }
-}
-@media (max-width: 1023px) {
   .advantages__subitem {
     font-size: 14px;
     line-height: 20px;
@@ -858,6 +868,11 @@ a {
 
 .governing {
   margin: 0 0 100px;
+}
+@media (max-width: 1023px) {
+  .governing {
+    margin: 0 0 60px;
+  }
 }
 .governing__title {
   font-size: 60px;
@@ -883,6 +898,12 @@ a {
   margin: 0 0 100px;
   list-style: none;
 }
+@media (max-width: 1023px) {
+  .governing__list {
+    gap: 30px 16px;
+    margin: 0 0 60px;
+  }
+}
 .governing__item {
   display: flex;
 }
@@ -892,12 +913,25 @@ a {
   border-radius: 20px;
   height: 580px;
 }
+@media (max-width: 1023px) {
+  .governing__text-card {
+    padding: 20px;
+    height: 340px;
+  }
+}
 .governing__text-title {
   font-size: 110px;
   line-height: 100px;
   letter-spacing: -0.06em;
   font-weight: 300;
   margin: 0 0 15px;
+}
+@media (max-width: 1023px) {
+  .governing__text-title {
+    font-size: 70px;
+    line-height: 60px;
+    letter-spacing: -0.06em;
+  }
 }
 .governing__text-achievement {
   font-size: 18px;
@@ -906,16 +940,35 @@ a {
   margin: 0 0 15px;
   border-bottom: 1px solid #CBCCCC;
 }
+@media (max-width: 1023px) {
+  .governing__text-achievement {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
 .governing__text-description {
   font-size: 18px;
   line-height: 26px;
   margin: 0;
+}
+@media (max-width: 1023px) {
+  .governing__text-description {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 .governing__slogan {
   max-width: 540px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 26px;
+}
+@media (max-width: 1023px) {
+  .governing__slogan {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 440px;
+  }
 }
 
 .governing-card {
@@ -929,9 +982,21 @@ a {
   position: relative;
   margin: 0 0 15px;
 }
+@media (max-width: 1023px) {
+  .governing-card__picture {
+    height: 340px;
+    margin: 0 0 10px;
+  }
+}
 .governing-card__picture img {
   width: 100%;
   height: 100%;
+}
+@media (max-width: 1023px) {
+  .governing-card__picture img {
+    width: 232px;
+    height: 340px;
+  }
 }
 .governing-card__icon {
   background: #1d252d;
@@ -946,6 +1011,20 @@ a {
   right: 20px;
   color: #ffffff;
 }
+@media (max-width: 1023px) {
+  .governing-card__icon {
+    width: 48px;
+    height: 48px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+@media (max-width: 1023px) {
+  .governing-card__icon svg {
+    width: 18px;
+    height: 18px;
+  }
+}
 .governing-card__name {
   font-size: 24px;
   line-height: 32px;
@@ -954,10 +1033,24 @@ a {
   margin: 0;
   text-transform: uppercase;
 }
+@media (max-width: 1023px) {
+  .governing-card__name {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    margin: 0 0 4px;
+  }
+}
 .governing-card__position {
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+}
+@media (max-width: 1023px) {
+  .governing-card__position {
+    font-size: 12px;
+    line-height: 16px;
+  }
 }
 .governing-card__link {
   position: absolute;
@@ -976,6 +1069,19 @@ a {
 @media (min-resolution: 2dppx) {
   .outro {
     background: url("../images/vacancy-bg@2x.jpg") no-repeat center;
+    background-size: cover;
+  }
+}
+@media (max-width: 1023px) {
+  .outro {
+    background: url("../images/vacancy-bg-tablet.png");
+    background-size: cover;
+    padding: 53px 0;
+  }
+}
+@media (max-width: 1023px) and (min-resolution: 2dppx) {
+  .outro {
+    background: url("../images/vacancy-bg-tablet@2x.png");
     background-size: cover;
   }
 }
@@ -1001,6 +1107,13 @@ a {
   margin: 0 0 30px 0;
   color: #ffffff;
 }
+@media (max-width: 1023px) {
+  .outro__note {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 0 0 15px 0;
+  }
+}
 .outro__link {
   display: flex;
   flex-direction: column;
@@ -1017,6 +1130,15 @@ a {
   max-width: 400px;
   text-align: center;
 }
+@media (max-width: 1023px) {
+  .outro__link-title {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    max-width: 300px;
+    margin: 0 0 15px 0;
+  }
+}
 .outro__link-icon {
   color: #000000;
   display: flex;
@@ -1026,6 +1148,17 @@ a {
   width: 64px;
   background-color: #ffffff;
   border-radius: 50%;
+}
+@media (max-width: 1023px) {
+  .outro__link-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 1023px) {
+  .outro__link-icon svg {
+    width: 18px;
+  }
 }
 
 .socials {
@@ -1117,6 +1250,11 @@ a {
 @media (max-width: 767px) {
   .footer__logo-link {
     margin: 0 0 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .footer__logo-link {
+    margin: 0 0 35px;
   }
 }
 .footer__logo-link svg {

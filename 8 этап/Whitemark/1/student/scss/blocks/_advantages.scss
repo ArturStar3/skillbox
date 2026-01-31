@@ -30,6 +30,20 @@
       gap: 30px;
       padding: 0 0 50px;
     }
+
+    &:not(:first-child) {
+      .advantages__list:nth-child(3n) {
+        @include vp-1023 {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &:last-child {
+      @include vp-1023 {
+        padding-bottom: 35px;
+      }
+    }
   }
 
   &__inner {
@@ -99,12 +113,6 @@
 
       @include vp-1023 {
         margin: 0 0 20px;
-      }
-
-    &:nth-child(3n) {
-        @include vp-1023 {
-          margin-bottom: 0;
-        }
       }
     }
 
