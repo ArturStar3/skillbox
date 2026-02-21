@@ -20,6 +20,17 @@
     background-size: cover;
   }
 
+  @include vp-767 {
+    background: url("../images/vacancy-bg-mobile.png");
+    background-size: cover;
+    padding: 32px;
+  }
+
+  @media (max-width: 768px) and (min-resolution: 2dppx) {
+    background: url("../images/vacancy-bg-mobile@2x.png");
+    background-size: cover;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -49,6 +60,10 @@
       line-height: 16px;
       margin: 0 0 15px 0;
     }
+
+    @include vp-767 {
+      margin: 0 0 10px;
+    }
   }
 
   &__link {
@@ -75,6 +90,12 @@
       max-width: 300px;
       margin: 0 0 15px 0;
     }
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 30px;
+      margin: 0 0 9px;
+    }
   }
 
   &__link-icon {
@@ -90,6 +111,11 @@
     @include vp-1023 {
       width: 48px;
       height: 48px;
+    }
+
+    @include vp-767 {
+      width: 40px;
+      height: 40px;
     }
 
     svg{
