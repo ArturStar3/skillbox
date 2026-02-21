@@ -642,6 +642,9 @@ a {
     gap: 12px;
   }
 }
+.hero__button:hover .hero__button-arrow, .hero__button:focus .hero__button-arrow {
+  left: 10px;
+}
 .hero__button-text {
   font-weight: 300;
   font-size: 16px;
@@ -703,6 +706,9 @@ a {
   line-height: 26px;
   padding: 0 10px 20px;
   border-bottom: 2px solid #000000;
+}
+.hero__link:hover, .hero__link:focus {
+  color: #A7A8AA;
 }
 @media (max-width: 1023px) {
   .hero__link {
@@ -1291,6 +1297,10 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.outro__link:hover .outro__link-icon, .outro__link:focus .outro__link-icon {
+  background-color: #1D252D;
+  color: #FFFFFF;
 }
 .outro__link-title {
   font-size: 60px;
