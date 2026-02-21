@@ -690,6 +690,11 @@ a {
   justify-content: center;
   flex-wrap: wrap;
 }
+@media (min-width: 1330px) and (max-width: 1510px) {
+  .hero__link-list {
+    gap: 35px;
+  }
+}
 @media (max-width: 1023px) {
   .hero__link-list {
     gap: 20px;
@@ -1114,6 +1119,11 @@ a {
   flex-direction: column;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .governing-card {
+    width: 160px;
+  }
+}
 .governing-card__picture {
   height: 580px;
   position: relative;
@@ -1144,6 +1154,7 @@ a {
   .governing-card__picture img {
     width: 160px;
     height: 240px;
+    max-width: unset;
   }
 }
 .governing-card__icon {
@@ -1172,7 +1183,7 @@ a {
     width: 40px;
     height: 40px;
     bottom: 10px;
-    right: 10px;
+    left: 110px;
   }
 }
 @media (max-width: 1023px) {
