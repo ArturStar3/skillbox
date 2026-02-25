@@ -1,0 +1,28 @@
+.spec {
+    max-width: 192px;
+
+    &__value {
+        font-family: $ff-tenor;
+        font-weight: 400;
+        color: $color-fallow;
+        margin-bottom: 10px;
+    }
+
+    &__number {
+        font-size: 48px;
+        line-height: 48px;
+        margin-right: 10px;
+
+    }
+
+    &__unit {
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    &__note {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
