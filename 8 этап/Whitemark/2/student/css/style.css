@@ -630,6 +630,7 @@ img {
 }
 .about__list {
   display: flex;
+  margin: 0 0 120px 0;
 }
 .about__item {
   overflow: hidden;
@@ -637,9 +638,8 @@ img {
   min-width: 456px;
 }
 .about__item--reverse {
-  border-width: 1px, 1px, 0px, 1px;
-  border-style: solid;
-  border-color: #C49A6C;
+  border: 1px solid #c49a6c;
+  border-bottom: none;
   border-radius: 600px 600px 0 0;
 }
 .about__item--text {
@@ -678,6 +678,19 @@ img {
   color: #ffffff;
   font-size: 18px;
   line-height: 26px;
+}
+.about__description {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: -0.08em;
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  display: block;
+  max-width: 1368px;
+}
+.about__description--new-row {
+  display: block;
 }
 
 .socials {

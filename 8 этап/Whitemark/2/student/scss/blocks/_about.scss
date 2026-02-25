@@ -4,6 +4,7 @@
 
     &__list {
         display: flex;
+        margin: 0 0 120px 0;
     }
 
     &__item {
@@ -12,9 +13,8 @@
         min-width: 456px;
 
         &--reverse {
-            border-width: 1px, 1px, 0px, 1px;
-            border-style: solid;
-            border-color: #C49A6C;
+            border: 1px solid $color-fallow;
+            border-bottom: none;
             border-radius: 600px 600px 0 0;
         }
 
@@ -61,5 +61,20 @@
         color: $color-white;
         font-size: 18px;
         line-height: 26px;
+    }
+
+    &__description {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: -0.08em;
+        font-family: $ff-tenor;
+        display: block;
+        max-width: 1368px;
+
+        &--new-row {
+            display: block;
+        }
     }
 }
