@@ -705,6 +705,9 @@ img {
      object-fit: cover;
 }
 
+.features {
+  margin: 0 0 120px 0;
+}
 .features__caption {
   margin: 0 0 30px 0;
   font-size: 18px;
@@ -773,6 +776,15 @@ img {
 .spec__note {
   font-size: 18px;
   line-height: 26px;
+}
+
+.park {
+  display: flex;
+  justify-content: space-between;
+}
+.park img {
+  width: 700px;
+  height: 700px;
 }
 
 .socials {

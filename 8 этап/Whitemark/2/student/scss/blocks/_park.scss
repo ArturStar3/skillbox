@@ -1,0 +1,9 @@
+.park {
+    display: flex;
+    justify-content: space-between;
+
+    & img {
+        width: 700px;
+        height: 700px;
+    }
+}
