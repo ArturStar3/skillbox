@@ -781,10 +781,35 @@ img {
 .park {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .park img {
   width: 700px;
   height: 700px;
+}
+.park__content {
+  max-width: 505px;
+}
+.park__caption {
+  font-family: "Tenor Sans", "Arial", sans-serif;
+  color: #c49a6c;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+.park__advantages-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+.park__advantages-item {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 0 0 15px 0;
+}
+.park__advantages-item::marker {
+  color: #c49a6c;
 }
 
 .socials {

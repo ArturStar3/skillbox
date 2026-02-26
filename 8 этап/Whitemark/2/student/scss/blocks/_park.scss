@@ -1,9 +1,39 @@
 .park {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     & img {
         width: 700px;
         height: 700px;
+    }
+
+    &__content {
+        max-width: 505px;
+    }
+
+    &__caption {
+        font-family: $ff-tenor;
+        color: $color-fallow;
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+        margin: 0 0 30px 0;
+    }
+
+    &__advantages-list {
+        list-style: disc;
+        padding-left: 20px;
+    }
+
+    &__advantages-item {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 0 0 15px 0;
+
+        &::marker {
+            color: $color-fallow;
+        }
     }
 }
