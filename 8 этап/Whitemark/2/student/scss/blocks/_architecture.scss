@@ -1,0 +1,27 @@
+.architecture {
+
+
+    &__heading {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 84px;
+        margin-bottom: 40px;
+    }
+
+    &__caption {
+        font-family: $ff-tenor;
+        color: $color-fallow;
+        font-weight: 400;
+        font-size: 34px;
+        line-height: 44px;
+        letter-spacing: -0.08em;
+        text-transform: uppercase;
+    }
+
+    &__heading-note {
+        grid-column: 3;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+}
