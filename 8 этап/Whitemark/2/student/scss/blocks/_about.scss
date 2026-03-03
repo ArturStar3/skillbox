@@ -2,15 +2,32 @@
     padding: 120px 0;
     color: $color-fallow;
 
+    @include vp-767 {
+        padding: 80px 0;
+    }
+
+    &__wraper {
+        @include vp-767 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
     &__list {
         display: flex;
         margin: 0 0 120px 0;
+
+        @include vp-767 {
+            margin: 0 0 80px 0;
+            max-width: 532px;
+        }
     }
 
     &__item {
         overflow: hidden;
         border-radius: 0 0 600px 600px;
         max-width: 456px;
+        width: 100%;
 
         &--reverse {
             border: 1px solid $color-fallow;
@@ -19,7 +36,8 @@
         }
 
         &--text {
-            padding: 91px 0;
+            display: flex;
+            align-items: center;
         }
     }
 
@@ -31,6 +49,14 @@
 
     &__logo-img {
         margin: 0 0 30px 0;
+        width: 110px;
+        height: 146px;
+
+        @include vp-767 {
+            width: 70px;
+            height: 94px;
+            margin: 0 0 20px 0;
+        }
     }
 
     &__logo-text {
@@ -39,6 +65,12 @@
         line-height: 26px;
         letter-spacing: 0.2em;
         margin: 0 0 10px 0;
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 20px;
+            margin: 0 0 5px 0;
+        }
     }
 
     &__title {
@@ -51,16 +83,35 @@
         text-align: center;
         font-weight: 400;
         margin: 0 0 40px 0;
+
+        @include vp-767 {
+            font-size: 28px;
+            line-height: 32px;
+            margin: 0 0 20px 0;
+        }
     }
 
     &__location-img {
         margin: 0 0 15px 0;
+        width: 17px;
+        height: 22px;
+
+        @include vp-767 {
+            width: 14px;
+            height: 19px;
+            margin: 0 0 10px 0;
+        }
     }
 
     &__location-text {
         color: $color-white;
         font-size: 18px;
         line-height: 26px;
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 20px;
+        }
     }
 
     &__description {
@@ -73,6 +124,11 @@
         display: block;
         max-width: 1368px;
 
+        @include vp-767 {
+            font-size: 24px;
+            line-height: 30px;
+        }
+        
         &--new-row {
             display: block;
         }

@@ -53,3 +53,9 @@ img {
   height: auto;
   object-fit: cover;
 }
+
+.desktop-only {
+  @include vp-767 {
+    display: none;
+  }
+}
