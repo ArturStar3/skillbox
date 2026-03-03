@@ -5,5 +5,9 @@
         display: flex;
         flex-direction: column;
         gap: 120px;
+
+        @include vp-767 {
+            gap: 80px;
+        }
     }
 }
