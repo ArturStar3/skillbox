@@ -59,3 +59,11 @@ img {
     display: none;
   }
 }
+
+.tablet-only {
+  display: none;
+
+  @include vp-767 {
+    display: inline;
+  }
+}
