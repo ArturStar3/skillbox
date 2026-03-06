@@ -143,10 +143,6 @@
     &:focus-visible {
       text-decoration: underline;
     }
-
-    @include vp-767 {
-      display: none;
-    }
   }
 
   &__phone {

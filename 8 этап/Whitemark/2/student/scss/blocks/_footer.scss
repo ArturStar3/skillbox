@@ -31,8 +31,8 @@
     }
 
     @include vp-767 {
-      gap: 40px;
-      grid-template-columns: 1fr;
+      gap: 25px;
+      grid-template-columns: auto 1fr;
     }
   }
 
@@ -42,7 +42,7 @@
     align-items: flex-start;
 
     @include vp-767 {
-      align-items: center;
+      align-items: flex-start;
     }
   }
 
@@ -56,7 +56,7 @@
     }
 
     @include vp-767 {
-      margin: 0 0 30px;
+      margin: 0 0 35px;
     }
 
     svg {
@@ -69,8 +69,8 @@
       }
 
       @include vp-767 {
-        height: 20px;
-        width: 88px;
+        height: 24px;
+        width: 105px;
       }
     }
   }
@@ -82,7 +82,8 @@
     margin: 0 0 40px;
 
     @include vp-767 {
-      margin: 0 0 30px;
+      margin: 0 0 40px;
+      gap: 12px;
     }
   }
 
@@ -122,6 +123,7 @@
 
     @include vp-767 {
       line-height: 22px;
+      font-size: 21px;
     }
   }
 
@@ -150,8 +152,9 @@
     }
 
     @include vp-767 {
-      grid-template-columns: 1fr;
-      gap: 15px;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: start;
+      gap: 15px 30px;
       margin: 0;
     }
   }
@@ -176,8 +179,8 @@
     }
 
     @include vp-767 {
-      text-align: center;
-      max-width: unset;
+      text-align: left;
+      max-width: 470px;
     }
   }
 }
