@@ -21,6 +21,10 @@
             margin: 0 0 80px 0;
             max-width: 532px;
         }
+
+        @include vp-374 {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -28,6 +32,10 @@
         border-radius: 0 0 600px 600px;
         max-width: 456px;
         width: 100%;
+
+        @include vp-374 {
+            max-width: 220px;
+        }
 
         &--reverse {
             border: 1px solid $color-fallow;
