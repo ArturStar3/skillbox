@@ -921,6 +921,11 @@ img {
     margin: 0 0 80px 0;
   }
 }
+@media (max-width: 375px) {
+  .features {
+    margin: 0 0 40px 0;
+  }
+}
 .features__caption {
   margin: 0 0 30px 0;
   font-size: 18px;
@@ -1031,10 +1036,12 @@ img {
 }
 @media (max-width: 375px) {
   .features__specs-list {
-    flex-wrap: wrap;
-    padding-left: unset;
-    justify-content: space-around;
-    gap: 0;
+    height: unset;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    padding: 0;
+    gap: 20px 40px;
   }
 }
 .features__specs-item {
@@ -1063,11 +1070,29 @@ img {
   .features__specs-item:nth-child(2n) .spec__img {
     margin-bottom: 15px;
   }
+  .features__specs-item:first-child {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 20px;
+  }
 }
 @media (max-width: 375px) {
   .features__specs-item {
     width: 120px;
-    height: 100%;
+    height: auto;
+  }
+  .features__specs-item:nth-child(2n) {
+    align-self: flex-start;
+  }
+  .features__specs-item:nth-child(3) {
+    justify-self: right;
+  }
+  .features__specs-item:nth-child(3) .spec__img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
   }
 }
 
@@ -1176,6 +1201,12 @@ img {
     margin: 0 0 74px 0;
   }
 }
+@media (max-width: 375px) {
+  .park__wraper {
+    flex-direction: column;
+    gap: 41px;
+  }
+}
 .park__content {
   max-width: 505px;
 }
@@ -1201,9 +1232,21 @@ img {
     margin: 0 0 20px 0;
   }
 }
+@media (max-width: 375px) {
+  .park__caption {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 15px 0;
+  }
+}
 .park__advantages-list {
   list-style: disc;
   padding-left: 20px;
+}
+@media (max-width: 375px) {
+  .park__advantages-list {
+    padding-left: 18px;
+  }
 }
 .park__advantages-item {
   font-weight: 400;
@@ -1213,6 +1256,11 @@ img {
 }
 .park__advantages-item::marker {
   color: #c49a6c;
+}
+@media (max-width: 375px) {
+  .park__advantages-item::marker {
+    font-size: 19px;
+  }
 }
 @media (max-width: 768px) {
   .park__advantages-item {
@@ -1274,6 +1322,12 @@ img {
   .park__advantage-number {
     font-size: 90px;
     line-height: 70px;
+  }
+}
+@media (max-width: 375px) {
+  .park__advantage-number {
+    font-size: 70px;
+    line-height: 50px;
   }
 }
 .park__advantage-unit {

@@ -19,6 +19,11 @@
             align-items: flex-start;
             margin: 0 0 74px 0;
         }
+
+        @include vp-374 {
+            flex-direction: column;
+            gap: 41px;
+        }
     }
 
     &__content {
@@ -44,11 +49,21 @@
             line-height: 30px;
             margin: 0 0 20px 0;
         }
+
+        @include vp-374 {
+            font-size: 20px;
+            line-height: 24px;
+            margin: 0 0 15px 0;
+        }
     }
 
     &__advantages-list {
         list-style: disc;
         padding-left: 20px;
+
+        @include vp-374 {
+            padding-left: 18px;
+        }
     }
 
     &__advantages-item {
@@ -59,6 +74,10 @@
 
         &::marker {
             color: $color-fallow;
+
+            @include vp-374 {
+                font-size: 19px;
+            }
         }
 
         @include vp-767 {
@@ -119,6 +138,11 @@
             @include vp-767 {
                 font-size: 90px;
                 line-height: 70px;
+            }
+
+            @include vp-374 {
+                font-size: 70px;
+                line-height: 50px;
             }
         }
 
